@@ -1,0 +1,6 @@
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture1\ConsoleSampleApp\ConsoleSampleApp\bin\Debug\ConsoleSampleApp.exe.config
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture1\ConsoleSampleApp\ConsoleSampleApp\bin\Debug\ConsoleSampleApp.exe
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture1\ConsoleSampleApp\ConsoleSampleApp\bin\Debug\ConsoleSampleApp.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture1\ConsoleSampleApp\ConsoleSampleApp\obj\Debug\ConsoleSampleApp.csprojAssemblyReference.cache
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture1\ConsoleSampleApp\ConsoleSampleApp\obj\Debug\ConsoleSampleApp.exe
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture1\ConsoleSampleApp\ConsoleSampleApp\obj\Debug\ConsoleSampleApp.pdb
