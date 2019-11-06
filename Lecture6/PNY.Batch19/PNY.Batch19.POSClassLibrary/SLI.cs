@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PNY.Batch19.POSClassLibrary.Products
+namespace PNY.Batch19.POSClassLibrary
 {
-    public class Category
+    public class SLI
     {
     }
 }

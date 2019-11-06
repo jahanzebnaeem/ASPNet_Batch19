@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PNY.Batch19.POSClassLibrary.Products
 {
-    public class Category
+    public class Product
     {
     }
 }

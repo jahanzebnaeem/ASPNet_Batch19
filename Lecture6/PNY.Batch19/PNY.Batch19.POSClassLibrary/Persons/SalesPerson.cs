@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PNY.Batch19.POSClassLibrary.Products
+namespace PNY.Batch19.POSClassLibrary.Persons
 {
-    public class Category
+    public class SalesPerson : Employee
     {
     }
 }
