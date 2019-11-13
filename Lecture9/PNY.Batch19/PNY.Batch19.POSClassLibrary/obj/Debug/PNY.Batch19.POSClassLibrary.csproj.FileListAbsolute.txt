@@ -1,0 +1,16 @@
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture6\PNY.Batch19\PNY.Batch19.POSClassLibrary\bin\Debug\PNY.Batch19.POSClassLibrary.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture6\PNY.Batch19\PNY.Batch19.POSClassLibrary\bin\Debug\PNY.Batch19.POSClassLibrary.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture6\PNY.Batch19\PNY.Batch19.POSClassLibrary\bin\Debug\PNY.Batch19.Common.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture6\PNY.Batch19\PNY.Batch19.POSClassLibrary\bin\Debug\PNY.Batch19.Common.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture6\PNY.Batch19\PNY.Batch19.POSClassLibrary\obj\Debug\PNY.Batch19.POSClassLibrary.csprojAssemblyReference.cache
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture6\PNY.Batch19\PNY.Batch19.POSClassLibrary\obj\Debug\PNY.Batch19.POSClassLibrary.csproj.CopyComplete
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture6\PNY.Batch19\PNY.Batch19.POSClassLibrary\obj\Debug\PNY.Batch19.POSClassLibrary.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture6\PNY.Batch19\PNY.Batch19.POSClassLibrary\obj\Debug\PNY.Batch19.POSClassLibrary.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.POSClassLibrary\bin\Debug\PNY.Batch19.POSClassLibrary.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.POSClassLibrary\bin\Debug\PNY.Batch19.POSClassLibrary.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.POSClassLibrary\bin\Debug\PNY.Batch19.Common.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.POSClassLibrary\bin\Debug\PNY.Batch19.Common.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.POSClassLibrary\obj\Debug\PNY.Batch19.POSClassLibrary.csprojAssemblyReference.cache
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.POSClassLibrary\obj\Debug\PNY.Batch19.POSClassLibrary.csproj.CopyComplete
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.POSClassLibrary\obj\Debug\PNY.Batch19.POSClassLibrary.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.POSClassLibrary\obj\Debug\PNY.Batch19.POSClassLibrary.pdb

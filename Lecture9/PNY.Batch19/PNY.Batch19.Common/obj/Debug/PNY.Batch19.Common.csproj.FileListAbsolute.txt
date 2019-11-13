@@ -1,0 +1,10 @@
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture5\PNY.Batch19\PNY.Batch19.Common\bin\Debug\PNY.Batch19.Common.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture5\PNY.Batch19\PNY.Batch19.Common\bin\Debug\PNY.Batch19.Common.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture5\PNY.Batch19\PNY.Batch19.Common\obj\Debug\PNY.Batch19.Common.csprojAssemblyReference.cache
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture5\PNY.Batch19\PNY.Batch19.Common\obj\Debug\PNY.Batch19.Common.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture5\PNY.Batch19\PNY.Batch19.Common\obj\Debug\PNY.Batch19.Common.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Common\bin\Debug\PNY.Batch19.Common.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Common\bin\Debug\PNY.Batch19.Common.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Common\obj\Debug\PNY.Batch19.Common.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Common\obj\Debug\PNY.Batch19.Common.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Common\obj\Debug\PNY.Batch19.Common.csprojAssemblyReference.cache

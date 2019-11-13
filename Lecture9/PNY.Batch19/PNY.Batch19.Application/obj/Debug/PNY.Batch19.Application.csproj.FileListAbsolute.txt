@@ -1,0 +1,12 @@
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\bin\Debug\PNY.Batch19.Application.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\bin\Debug\PNY.Batch19.Application.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\bin\Debug\PNY.Batch19.Common.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\bin\Debug\PNY.Batch19.DAL.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\bin\Debug\PNY.Batch19.POSClassLibrary.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\bin\Debug\PNY.Batch19.Common.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\bin\Debug\PNY.Batch19.DAL.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\bin\Debug\PNY.Batch19.POSClassLibrary.pdb
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\obj\Debug\PNY.Batch19.Application.csprojAssemblyReference.cache
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\obj\Debug\PNY.Batch19.Application.csproj.CopyComplete
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\obj\Debug\PNY.Batch19.Application.dll
+Y:\Development\Teaching\DotNet\ASPNet_Batch19\Lecture9\PNY.Batch19\PNY.Batch19.Application\obj\Debug\PNY.Batch19.Application.pdb
