@@ -17,6 +17,7 @@ namespace MVCViewsIntro.Controllers
 
         // GET: Countries
         [AllowAnonymous]
+        [Route("Country/AllList")]
         public ActionResult Index()
         {
             return View(db.Countries.ToList());

@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Batch 19";
+}
+<h1>@ViewBag.Title</h1>
+<h2>@ViewBag.Message</h2>
+
+@{
+    @:<ul>
+        for (int i = 0; i < 10; i++)
+        {
+            @:<li>@i</li>
+            @*@Html.Label("lblName", i.ToString()+"/n", new { id = "value"+i })*@
+        }
+    @:</ul>
+}
+
+
+
