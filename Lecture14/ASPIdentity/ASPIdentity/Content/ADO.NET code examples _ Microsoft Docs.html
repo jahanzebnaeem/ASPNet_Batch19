@@ -1,0 +1,2227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples -->
+<html class="hasSidebar hasPageActions hasBreadcrumb conceptual has-default-focus js-focus-visible theme-light" lang="en-us" dir="ltr" data-css-variable-support="true" data-authenticated="false" data-auth-status-determined="true" data-target="docs" x-ms-format-detection="none"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style"></style>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="ADO.NET code examples">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@docsmsft">
+
+		<meta name="apiPlatform" content="dotnet">
+<meta name="author" content="stevestein">
+<meta name="breadcrumb_path" content="/dotnet/breadcrumb/toc.json">
+<meta name="depot_name" content="VS.core-docs">
+<meta name="document_id" content="9c7bb383-fcde-22f1-16fb-dd0c05a6dd35">
+<meta name="document_version_independent_id" content="446292d0-2dfa-79ac-113f-3c456869b0d3">
+<meta name="gitcommit" content="https://github.com/dotnet/docs/blob/9c68c80507ffa0ffcf919212f75cd3548f22db72/docs/framework/data/adonet/ado-net-code-examples.md">
+<meta name="locale" content="en-us">
+<meta name="ms.assetid" content="c119657a-9ce6-4940-91e4-ac1d5f0d9584">
+<meta name="ms.author" content="sstein">
+<meta name="ms.date" content="03/30/2017">
+<meta name="ms.devlang" content="dotnet">
+<meta name="ms.prod" content="dotnet-framework">
+<meta name="ms.technology" content="dotnet-data">
+<meta name="ms.topic" content="conceptual">
+<meta name="original_content_git_url" content="https://github.com/dotnet/docs/blob/live/docs/framework/data/adonet/ado-net-code-examples.md">
+<meta name="search.ms_docsetname" content="core-docs">
+<meta name="search.ms_product" content="VS">
+<meta name="search.ms_sitename" content="Docs">
+<meta name="site_name" content="Docs">
+<meta name="uhfHeaderId" content="MSDocsHeader-DotNet">
+<meta name="updated_at" content="2019-11-23 08:23 AM">
+<meta name="page_type" content="conceptual">
+<meta name="toc_rel" content="toc.json">
+<meta name="pdf_url_template" content="https://docs.microsoft.com/pdfstore/en-us/VS.core-docs/{branchName}{pdfName}">
+<meta name="search.mshattr.devlang" content="csharp vb">
+<meta name="word_count" content="2423">
+
+	<meta name="scope" content=".NET">
+<link href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples" rel="canonical">
+	<title>ADO.NET code examples | Microsoft Docs</title>
+
+		<link rel="stylesheet" href="./ADO.NET code examples _ Microsoft Docs_files/782e64cb.site-ltr.css">
+
+	<link rel="stylesheet" href="./ADO.NET code examples _ Microsoft Docs_files/2488a4dd.conceptual.css">
+
+
+	<script async="" defer="" crossorigin="anonymous" src="./ADO.NET code examples _ Microsoft Docs_files/lux.js.download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/analytics.js.download"></script><script>
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			azureHeaderLocale: 'en-us',
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'Conceptual',
+			brand: '',
+			context: {
+
+			},
+			hasComments: false,
+			showFeedbackReport: false,
+			binaryRatingUpdate : false,
+			enableTutorialFeedback: false,
+			feedbackSystem: 'None',
+			feedbackGitHubRepo: '',
+			feedbackProductUrl: '',
+			contentGitUrl: 'https://github.com/dotnet/docs/blob/master/docs/framework/data/adonet/ado-net-code-examples.md',
+			showLatex: true,
+			extendBreadcrumb: false,
+		},
+		functions:{}
+	};
+	if (!('Promise' in window && 'resolve' in window.Promise && 'reject' in window.Promise && 'all' in window.Promise && 'race' in window.Promise)) {
+		document.write('<script src="https://static.docs.com/ui/third-party/bluebird/3.5.0/bluebird.min.js" integrity="sha384-aD4BDeDGeLXLpPK4yKeqtZQa9dv4a/7mQ+4L5vwshIYH1Mc2BrXvHd32iHzYCQy5" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof fetch !== 'function') {
+		document.write('<script src="https://static.docs.com/ui/third-party/fetch/2.0.3/fetch.min.js" integrity="sha384-H3LQq82b6Mm80GYRHtRSlTwO9DoXctmYCVEYk9M8mp97lRzs6DuSrHVUg3SBP9w0" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof HTMLTemplateElement === 'undefined') {
+		document.write('<script src="https://static.docs.com/ui/third-party/template/1.4.0/template.min.js" integrity="sha384-1zKzI6ldTVHMU7n0W2HpE/lhHI+UG4D9IIaxbj3kT2UhCWicdTuJkTtnKuu0CQzN" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof URL !== 'function') {
+		document.write('<script src="https://static.docs.com/ui/third-party/url/0.5.7/url.min.js" integrity="sha384-vn7xBMtpSTfzaTRWxj0kVq0UcsbBrTOgZ/M1ISHqe1V358elYva+lfiEC+T8jLPc" crossorigin="anonymous"><\/script>');
+	}
+	</script>
+
+	<script src="./ADO.NET code examples _ Microsoft Docs_files/jquery-3.3.1.min.js.download" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+		<script src="./ADO.NET code examples _ Microsoft Docs_files/a6599b79.index-docs.js.download"></script><style></style><script src="./ADO.NET code examples _ Microsoft Docs_files/jsll-4.js.download" async="" defer=""></script>
+
+<script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js.download"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(1).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(2).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(3).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(4).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(5).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(6).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(7).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(8).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(9).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(10).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(11).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(12).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(13).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(14).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(15).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(16).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(17).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(18).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(19).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(20).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(21).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(22).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(23).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(24).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(25).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(26).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(27).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(28).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(29).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(30).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(31).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(32).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(33).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(34).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(35).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(36).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(37).download"></script><script async="" src="./ADO.NET code examples _ Microsoft Docs_files/t.js(38).download"></script><script async="" src="https://web.vortex.data.microsoft.com/collect/v1/t.js?ver=%272.1%27&amp;name=%27Ms.Webi.ContentUpdate%27&amp;time=%272020-01-29T15%3A58%3A40.661Z%27&amp;os=%27Windows%27&amp;appId=%27JS%3ADocs%27&amp;-ver=%271.0%27&amp;-impressionGuid=%2720baef15-9db5-409e-96a9-e7629df3e6e7%27&amp;-pageName=%279c7bb383-fcde-22f1-16fb-dd0c05a6dd35%27&amp;-uri=%27https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples%27&amp;-market=%27en-us%27&amp;-pageTags=%27%7B%22author%22%3A%22stevestein%22%2C%22depotname%22%3A%22VS.core-docs%22%2C%22document_version_independent_id%22%3A%22446292d0-2dfa-79ac-113f-3c456869b0d3%22%2C%22gitcommit%22%3A%22https%3A%2F%2Fgithub.com%2Fdotnet%2Fdocs%2Fblob%2F9c68c80507ffa0ffcf919212f75cd3548f22db72%2Fdocs%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples.md%22%2C%22asst%22%3A%22c119657a-9ce6-4940-91e4-ac1d5f0d9584%22%2C%22pgauth%22%3A%22sstein%22%2C%22date%22%3A%2203%2F30%2F2017%22%2C%22pgdevlng%22%3A%22dotnet%22%2C%22product%22%3A%22dotnet-framework%22%2C%22technology%22%3A%22dotnet-data%22%2C%22pgtop%22%3A%22conceptual%22%2C%22giturl%22%3A%22https%3A%2F%2Fgithub.com%2Fdotnet%2Fdocs%2Fblob%2Flive%2Fdocs%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples.md%22%2C%22publishtime%22%3A%222019-11-23%2008%3A23%20AM%22%2C%22contentlocale%22%3A%22en-us%22%2C%22highContrast%22%3A%22false%22%2C%22metaTags%22%3A%7B%7D%7D%27&amp;-pageHeight=9702&amp;-vpHeight=640&amp;-vpWidth=1280&amp;-actionType=%27R%27&amp;-behavior=0&amp;-vScrollOffset=1540&amp;-hScrollOffset=0&amp;-contentVer=%272.0%27&amp;-content=%27%5B%5D%27&amp;*baseType=%27Ms.Content.ContentUpdate%27&amp;*title=%27ADO.NET%20code%20examples%20%7C%20Microsoft%20Docs%27&amp;*cookieEnabled=true&amp;*isJs=true&amp;*isDomComplete=false&amp;*isLoggedIn=false&amp;ext-javascript-ver=%271.1%27&amp;ext-javascript-libVer=%274.2.14%27&amp;ext-javascript-domain=%27docs.microsoft.com%27&amp;ext-javascript-msfpc=%27GUID%3D5f71c656b045478786a2cdae231fced3%26HASH%3D5f71%26LV%3D201909%26V%3D4%26LU%3D1569290579400%27&amp;ext-javascript-userConsent=true&amp;ext-user-localId=%27t%3A162579E4C9EF686429E17405CDEF6E73%27&amp;$mscomCookies=false"></script><script async="" src="https://web.vortex.data.microsoft.com/collect/v1/t.js?ver=%272.1%27&amp;name=%27Ms.Webi.PageAction%27&amp;time=%272020-01-29T15%3A58%3A43.464Z%27&amp;os=%27Windows%27&amp;appId=%27JS%3ADocs%27&amp;-ver=%271.0%27&amp;-impressionGuid=%2720baef15-9db5-409e-96a9-e7629df3e6e7%27&amp;-pageName=%279c7bb383-fcde-22f1-16fb-dd0c05a6dd35%27&amp;-uri=%27https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples%27&amp;-pageTags=%27%7B%22author%22%3A%22stevestein%22%2C%22depotname%22%3A%22VS.core-docs%22%2C%22document_version_independent_id%22%3A%22446292d0-2dfa-79ac-113f-3c456869b0d3%22%2C%22gitcommit%22%3A%22https%3A%2F%2Fgithub.com%2Fdotnet%2Fdocs%2Fblob%2F9c68c80507ffa0ffcf919212f75cd3548f22db72%2Fdocs%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples.md%22%2C%22asst%22%3A%22c119657a-9ce6-4940-91e4-ac1d5f0d9584%22%2C%22pgauth%22%3A%22sstein%22%2C%22date%22%3A%2203%2F30%2F2017%22%2C%22pgdevlng%22%3A%22dotnet%22%2C%22product%22%3A%22dotnet-framework%22%2C%22technology%22%3A%22dotnet-data%22%2C%22pgtop%22%3A%22conceptual%22%2C%22giturl%22%3A%22https%3A%2F%2Fgithub.com%2Fdotnet%2Fdocs%2Fblob%2Flive%2Fdocs%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples.md%22%2C%22publishtime%22%3A%222019-11-23%2008%3A23%20AM%22%2C%22contentlocale%22%3A%22en-us%22%2C%22highContrast%22%3A%22false%22%2C%22metaTags%22%3A%7B%7D%7D%27&amp;-contentVer=%272.0%27&amp;-market=%27en-us%27&amp;-pageType=%27conceptual%27&amp;-actionType=%27O%27&amp;-behavior=300&amp;-content=%27%5B%7B%22event%22%3A%22page-visibility-changed%22%2C%22value%22%3A%22hidden%22%7D%5D%27&amp;*baseType=%27Ms.Content.PageAction%27&amp;*timeToAction=4321733&amp;*cookieEnabled=true&amp;*isJs=true&amp;*title=%27ADO.NET%20code%20examples%20%7C%20Microsoft%20Docs%27&amp;*isLoggedIn=false&amp;*isManual=true&amp;*referrerUri=%27https%3A%2F%2Fwww.google.com%2F%27&amp;ext-javascript-ver=%271.1%27&amp;ext-javascript-libVer=%274.2.14%27&amp;ext-javascript-domain=%27docs.microsoft.com%27&amp;ext-javascript-msfpc=%27GUID%3D5f71c656b045478786a2cdae231fced3%26HASH%3D5f71%26LV%3D201909%26V%3D4%26LU%3D1569290579400%27&amp;ext-javascript-userConsent=true&amp;ext-user-localId=%27t%3A162579E4C9EF686429E17405CDEF6E73%27&amp;$mscomCookies=false"></script><script async="" src="https://web.vortex.data.microsoft.com/collect/v1/t.js?ver=%272.1%27&amp;name=%27Ms.Webi.PageAction%27&amp;time=%272020-01-29T15%3A58%3A43.526Z%27&amp;os=%27Windows%27&amp;appId=%27JS%3ADocs%27&amp;-ver=%271.0%27&amp;-impressionGuid=%2720baef15-9db5-409e-96a9-e7629df3e6e7%27&amp;-pageName=%279c7bb383-fcde-22f1-16fb-dd0c05a6dd35%27&amp;-uri=%27https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples%27&amp;-pageTags=%27%7B%22author%22%3A%22stevestein%22%2C%22depotname%22%3A%22VS.core-docs%22%2C%22document_version_independent_id%22%3A%22446292d0-2dfa-79ac-113f-3c456869b0d3%22%2C%22gitcommit%22%3A%22https%3A%2F%2Fgithub.com%2Fdotnet%2Fdocs%2Fblob%2F9c68c80507ffa0ffcf919212f75cd3548f22db72%2Fdocs%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples.md%22%2C%22asst%22%3A%22c119657a-9ce6-4940-91e4-ac1d5f0d9584%22%2C%22pgauth%22%3A%22sstein%22%2C%22date%22%3A%2203%2F30%2F2017%22%2C%22pgdevlng%22%3A%22dotnet%22%2C%22product%22%3A%22dotnet-framework%22%2C%22technology%22%3A%22dotnet-data%22%2C%22pgtop%22%3A%22conceptual%22%2C%22giturl%22%3A%22https%3A%2F%2Fgithub.com%2Fdotnet%2Fdocs%2Fblob%2Flive%2Fdocs%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples.md%22%2C%22publishtime%22%3A%222019-11-23%2008%3A23%20AM%22%2C%22contentlocale%22%3A%22en-us%22%2C%22highContrast%22%3A%22false%22%2C%22metaTags%22%3A%7B%7D%7D%27&amp;-contentVer=%272.0%27&amp;-market=%27en-us%27&amp;-pageType=%27conceptual%27&amp;-actionType=%27O%27&amp;-behavior=300&amp;-content=%27%5B%7B%22event%22%3A%22page-visibility-changed%22%2C%22value%22%3A%22visible%22%7D%5D%27&amp;*baseType=%27Ms.Content.PageAction%27&amp;*timeToAction=4321799&amp;*cookieEnabled=true&amp;*isJs=true&amp;*title=%27ADO.NET%20code%20examples%20%7C%20Microsoft%20Docs%27&amp;*isLoggedIn=false&amp;*isManual=true&amp;*referrerUri=%27https%3A%2F%2Fwww.google.com%2F%27&amp;ext-javascript-ver=%271.1%27&amp;ext-javascript-libVer=%274.2.14%27&amp;ext-javascript-domain=%27docs.microsoft.com%27&amp;ext-javascript-msfpc=%27GUID%3D5f71c656b045478786a2cdae231fced3%26HASH%3D5f71%26LV%3D201909%26V%3D4%26LU%3D1569290579400%27&amp;ext-javascript-userConsent=true&amp;ext-user-localId=%27t%3A162579E4C9EF686429E17405CDEF6E73%27&amp;$mscomCookies=false"></script><script async="" src="https://web.vortex.data.microsoft.com/collect/v1/t.js?ver=%272.1%27&amp;name=%27Ms.Webi.PageAction%27&amp;time=%272020-01-29T15%3A58%3A44.683Z%27&amp;os=%27Windows%27&amp;appId=%27JS%3ADocs%27&amp;-ver=%271.0%27&amp;-impressionGuid=%2720baef15-9db5-409e-96a9-e7629df3e6e7%27&amp;-pageName=%279c7bb383-fcde-22f1-16fb-dd0c05a6dd35%27&amp;-uri=%27https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples%27&amp;-pageTags=%27%7B%22author%22%3A%22stevestein%22%2C%22depotname%22%3A%22VS.core-docs%22%2C%22document_version_independent_id%22%3A%22446292d0-2dfa-79ac-113f-3c456869b0d3%22%2C%22gitcommit%22%3A%22https%3A%2F%2Fgithub.com%2Fdotnet%2Fdocs%2Fblob%2F9c68c80507ffa0ffcf919212f75cd3548f22db72%2Fdocs%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples.md%22%2C%22asst%22%3A%22c119657a-9ce6-4940-91e4-ac1d5f0d9584%22%2C%22pgauth%22%3A%22sstein%22%2C%22date%22%3A%2203%2F30%2F2017%22%2C%22pgdevlng%22%3A%22dotnet%22%2C%22product%22%3A%22dotnet-framework%22%2C%22technology%22%3A%22dotnet-data%22%2C%22pgtop%22%3A%22conceptual%22%2C%22giturl%22%3A%22https%3A%2F%2Fgithub.com%2Fdotnet%2Fdocs%2Fblob%2Flive%2Fdocs%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples.md%22%2C%22publishtime%22%3A%222019-11-23%2008%3A23%20AM%22%2C%22contentlocale%22%3A%22en-us%22%2C%22highContrast%22%3A%22false%22%2C%22metaTags%22%3A%7B%7D%7D%27&amp;-contentVer=%272.0%27&amp;-market=%27en-us%27&amp;-pageType=%27conceptual%27&amp;-actionType=%27O%27&amp;-behavior=300&amp;-content=%27%5B%7B%22event%22%3A%22page-focus-changed%22%2C%22value%22%3A%22blur%22%7D%5D%27&amp;*baseType=%27Ms.Content.PageAction%27&amp;*timeToAction=4322952&amp;*cookieEnabled=true&amp;*isJs=true&amp;*title=%27ADO.NET%20code%20examples%20%7C%20Microsoft%20Docs%27&amp;*isLoggedIn=false&amp;*isManual=true&amp;*referrerUri=%27https%3A%2F%2Fwww.google.com%2F%27&amp;ext-javascript-ver=%271.1%27&amp;ext-javascript-libVer=%274.2.14%27&amp;ext-javascript-domain=%27docs.microsoft.com%27&amp;ext-javascript-msfpc=%27GUID%3D5f71c656b045478786a2cdae231fced3%26HASH%3D5f71%26LV%3D201909%26V%3D4%26LU%3D1569290579400%27&amp;ext-javascript-userConsent=true&amp;ext-user-localId=%27t%3A162579E4C9EF686429E17405CDEF6E73%27&amp;$mscomCookies=false"></script></head>
+
+<body lang="en-us" dir="ltr" data-gr-c-s-loaded="true"><div id="MathJax_Message" style="display: none;"></div>
+<div class="header-holder has-default-focus">
+	<a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#main" class="skip-to-main-link visually-hidden-until-focused is-fixed has-inner-focus focus-visible has-top-zero has-left-zero has-right-zero has-padding-medium has-text-centered has-body-background-medium" tabindex="1">Skip to main content</a>
+		<div id="headerAreaHolder" data-bi-name="header">
+<header role="banner" itemscope="itemscope" itemtype="http://schema.org/Organization"><!----><!----><div class="nav-bar"><!---->
+		
+		
+		<a class="nav-bar-button" itemprop="url" href="https://www.microsoft.com/" aria-label="Microsoft">
+			<div class="nav-bar-logo has-background-image theme-display is-light" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope"></div>
+			<div class="nav-bar-logo has-background-image theme-display is-dark is-high-contrast" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope"></div>
+		</a>
+		
+		<nav class="nav-bar-nav" role="navigation" aria-label="Global">
+			<ul class="nav-bar-nav-list">
+				
+		<li class="nav-bar-item is-category has-spacing">
+			<a class="nav-bar-button title has-hover-underline is-4" itemprop="url" href="https://dotnet.microsoft.com/">
+				<span><!---->.NET<!----></span>
+			</a>
+		</li>
+				<!---->
+		<li class="nav-bar-item">
+			<a class="nav-bar-button has-hover-underline" href="https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet">
+				<span><!---->About<!----></span>
+			</a>
+		</li><!---->
+		<li class="nav-bar-item">
+			<a class="nav-bar-button has-hover-underline" href="https://dotnet.microsoft.com/learn">
+				<span><!---->Learn<!----></span>
+			</a>
+		</li><!---->
+		<li class="nav-bar-item">
+			<a class="nav-bar-button has-hover-underline" href="https://dotnet.microsoft.com/learn/dotnet/architecture-guides">
+				<span><!---->Architecture<!----></span>
+			</a>
+		</li><!---->
+		<li class="nav-bar-item">
+			<a class="nav-bar-button has-hover-underline" href="https://docs.microsoft.com/dotnet">
+				<span><!---->Docs<!----></span>
+			</a>
+		</li><!---->
+		<li class="nav-bar-item">
+			<a class="nav-bar-button has-hover-underline" href="https://dotnet.microsoft.com/download">
+				<span><!---->Downloads<!----></span>
+			</a>
+		</li><!---->
+		<li class="nav-bar-item">
+			<a class="nav-bar-button has-hover-underline" href="https://dotnet.microsoft.com/platform/community">
+				<span><!---->Community<!----></span>
+			</a>
+		</li><!---->
+		<li class="dropdown nav-bar-item" hidden="">
+			<button aria-expanded="false" class="dropdown-trigger nav-bar-button has-hover-underline" aria-controls="ax-9">
+				<span><!---->More<!----></span>
+				<span class="nav-bar-button-chevron" aria-hidden="true">
+					<span class="docon docon-chevron-down-light expanded-indicator"></span>
+				</span>
+			</button>
+			<ul class="dropdown-menu" id="ax-9" aria-label="More">
+				<!---->
+		<li class="nav-bar-item" hidden="">
+			<a class="nav-bar-button" href="https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet"><!---->About<!----></a>
+		</li>
+	<!---->
+		<li class="nav-bar-item" hidden="">
+			<a class="nav-bar-button" href="https://dotnet.microsoft.com/learn"><!---->Learn<!----></a>
+		</li>
+	<!---->
+		<li class="nav-bar-item" hidden="">
+			<a class="nav-bar-button" href="https://dotnet.microsoft.com/learn/dotnet/architecture-guides"><!---->Architecture<!----></a>
+		</li>
+	<!---->
+		<li class="nav-bar-item" hidden="">
+			<a class="nav-bar-button" href="https://docs.microsoft.com/dotnet"><!---->Docs<!----></a>
+		</li>
+	<!---->
+		<li class="nav-bar-item" hidden="">
+			<a class="nav-bar-button" href="https://dotnet.microsoft.com/download"><!---->Downloads<!----></a>
+		</li>
+	<!---->
+		<li class="nav-bar-item" hidden="">
+			<a class="nav-bar-button" href="https://dotnet.microsoft.com/platform/community"><!---->Community<!----></a>
+		</li>
+	<!---->
+			</ul>
+		</li><!---->
+				
+		<li class="nav-bar-item has-spacing">
+			<a class="button is-small is-primary is-outlined" href="https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro">
+				Get Started
+			</a>
+		</li>
+			</ul>
+		</nav>
+		<span class="nav-bar-spacer"></span>
+		
+			<div class="nav-bar-item nav-bar-search-form-item" id="ax-10" hidden="">
+				
+			<form class="is-flex" method="GET" id="searchForm" name="searchForm" role="search" aria-label="Search" aria-expanded="false" action="https://docs.microsoft.com/en-us/search/">
+					
+							<button class="nav-bar-button has-margin-extra-small tag" type="button" aria-label="Search filter is &quot;.NET&quot;. Tap to remove.">
+								<span class="is-inline-truncated"><!---->.NET<!----></span>
+								<span class="icon">
+									<span class="docon docon-navigate-close" aria-hidden="true"></span>
+								</span>
+							</button>
+					<div class="autocomplete" data-bi-name="autocomplete"><!---->
+		<div class="control ">
+			<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="site-search-input" class="autocomplete-input input   is-full-width" type="search" name="search" aria-expanded="false" aria-owns="ax-11-listbox" aria-activedescendant="" placeholder="Search">
+
+			<span class="icon is-small is-left" aria-hidden="true" hidden="">
+				<span class="has-text-primary docon docon-undefined"></span>
+			</span>
+
+			<span class="autocomplete-loader loader has-text-primary" aria-hidden="true" hidden=""></span>
+		</div>
+
+		<ul class="autocomplete-suggestions is-vertically-scrollable" role="listbox" id="ax-11-listbox" hidden="">
+			
+		</ul><!----></div>
+					<!-- mobile safari will not dispatch submit event unless there's a submit button that is not display:none -->
+					<button type="submit" class="visually-hidden" tabindex="-1" aria-hidden="true"></button>
+					<input name="category" hidden="" value="All">
+					<input name="scope" hidden="" value=".NET">
+					
+			</form>
+		
+			</div>
+			<div class="nav-bar-item ">
+				<button id="form-expander" class="nav-bar-button has-hover-underline has-margin-left-extra-small" title="Search" aria-expanded="false" aria-controls="ax-10">
+						
+					<span class="is-visually-hidden-mobile"><!---->Search<!----></span>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-search"></span>
+					</span>
+	
+				</button>
+			</div>
+		<!----><!----></div></header>		</div>
+		<div class="content-header uhf-container has-padding has-default-focus" data-bi-name="content-header">
+			<nav class="has-padding-none-mobile has-flex-grow" data-bi-name="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" aria-label="Breadcrumb">
+				<ul id="page-breadcrumbs" class="breadcrumbs"><!---->
+		<!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<a itemprop="item" href="https://docs.microsoft.com/en-us/">
+				<span itemprop="name">
+					Docs
+				</span>
+			</a>
+			<meta itemprop="position" content="1">
+		</li><!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<a itemprop="item" href="https://docs.microsoft.com/en-us/dotnet/">
+				<span itemprop="name">
+					.NET
+				</span>
+			</a>
+			<meta itemprop="position" content="2">
+		</li><!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<a itemprop="item" href="https://docs.microsoft.com/en-us/dotnet/framework/">
+				<span itemprop="name">
+					.NET Framework
+				</span>
+			</a>
+			<meta itemprop="position" content="3">
+		</li><!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<a itemprop="item" href="https://docs.microsoft.com/en-us/dotnet/framework/data/">
+				<span itemprop="name">
+					Data and modeling
+				</span>
+			</a>
+			<meta itemprop="position" content="4">
+		</li><!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<a itemprop="item" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/">
+				<span itemprop="name">
+					ADO.<wbr>NET
+				</span>
+			</a>
+			<meta itemprop="position" content="5">
+		</li><!---->
+	<!----></ul>
+			</nav>
+		<div class="content-header-controls">
+			<button type="button" class="contents-button button" data-bi-name="contents-expand" aria-haspopup="true">
+				<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+				<span>Contents</span>
+			</button>
+		</div>
+		<div class="content-header-controls exit-focus">
+			<button type="button" class="ap-collapse-behavior ap-expanded button" data-bi-name="ap-collapse" aria-controls="action-panel">
+				<span class="icon"><span class="docon docon-exit-mode" aria-hidden="true"></span></span>
+				<span>Exit focus mode</span>
+			</button>
+		</div>
+		<div class="is-size-7 is-flex-touch has-flex-justify-content-space-between-touch has-flex-grow has-padding-none has-padding-none-mobile">
+			<ul class="action-list has-flex-justify-content-start has-flex-justify-content-end-tablet is-flex is-flex-row has-flex-wrap has-flex-grow is-unstyled">
+				<li>
+<div class="language dropdown has-caret">
+	<button class="dropdown-trigger button is-text is-small" aria-controls="language-menu" aria-expanded="false" title="Language" data-bi-name="language">
+		<span class="icon is-hidden-desktop has-margin-none">
+			<span class="docon docon-code-lang" aria-hidden="true"></span>
+		</span>
+		<span id="lang-title" class="is-visually-hidden-touch has-flex-align-self-start is-hidden-portrait">C#</span>
+		<span class="icon is-hidden-mobile is-hidden-tablet-only" aria-hidden="true">
+			<span class="docon docon-chevron-down-light expanded-indicator"></span>
+		</span>
+	</button>
+	<div class="dropdown-menu has-padding-small" name="language-selector" id="language-selector" role="menu">
+		<ul data-bi-name="language-links">
+				<li><a class="button is-text is-small is-fullwidth has-flex-justify-content-start" data-bi-name="lang-csharp" tabindex="0" aria-selected="true">C#</a></li>
+				<li><a class="button is-text is-small is-fullwidth has-flex-justify-content-start" data-bi-name="lang-vb" tabindex="0" aria-selected="false">VB</a></li>
+		</ul>
+	</div>
+</div>				</li>
+				<li>
+					<button type="button" class="bookmark button is-text has-inner-focus is-small is-icon-only-touch" data-list-type="bookmarks" data-bi-name="bookmark" title="Add bookmark for ADO.NET code examples | Microsoft Docs" aria-pressed="false">
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-single-bookmark"></span>
+						</span>
+						<span class="bookmark-status is-visually-hidden-touch is-hidden-portrait">Bookmark</span>
+					</button>
+				</li>
+							<li id="contenteditbtn">
+									<a href="https://github.com/dotnet/docs/blob/master/docs/framework/data/adonet/ado-net-code-examples.md" class="button is-text has-inner-focus is-icon-only-touch is-small" title="Edit This Document" data-bi-name="edit" data-original_content_git_url="https://github.com/dotnet/docs/blob/live/docs/framework/data/adonet/ado-net-code-examples.md" data-original_content_git_url_template="{repo}/blob/{branch}/docs/framework/data/adonet/ado-net-code-examples.md" data-pr_repo="" data-pr_branch="">
+									<span class="icon">
+										<span class="docon docon-edit-outline" aria-hidden="true"></span>
+									</span>
+									<span class="is-visually-hidden-touch is-hidden-portrait">Edit</span>
+								</a>
+							</li>
+				<li>
+<div class="sharing dropdown has-caret">
+	<button class="dropdown-trigger button is-text is-fullwidth has-flex-justify-content-start has-inner-focus is-small is-icon-only-touch" aria-controls="sharing-menu" aria-expanded="false" title="Share This Document" data-bi-name="share">
+		<span class="icon" aria-hidden="true">
+			<span class="docon docon-sharing"></span>
+		</span>
+		<span class="is-visually-hidden-touch is-hidden-portrait">Share</span>
+	</button>
+	<div class="dropdown-menu has-padding-small" id="sharing-menu">
+		<ul data-bi-name="share-links">
+			<li>
+				<a class="button is-text is-fullwidth has-flex-justify-content-start has-inner-focus is-small share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples%3FWT.mc_id%3Dtwitter&amp;text=ADO.NET%20code%20examples%20%7C%20Microsoft%20Docs&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples%3FWT.mc_id%3Dtwitter">
+					<span class="icon">
+						<span class="docon docon-brand-twitter has-text-primary" aria-hidden="true"></span>
+					</span>
+					<span>Twitter</span>
+				</a>
+			</li>
+			<li>
+				<a class="button is-text is-fullwidth has-flex-justify-content-start has-inner-focus is-small share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples%3FWT.mc_id%3Dlinkedin">
+					<span class="icon">
+						<span class="docon docon-brand-linkedin has-text-primary" aria-hidden="true"></span>
+					</span>
+					<span>LinkedIn</span>
+				</a>
+			</li>
+			<li>
+				<a class="button is-text is-fullwidth has-flex-justify-content-start has-inner-focus is-small share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples%3FWT.mc_id%3Dfacebook">
+					<span class="icon">
+						<span class="docon docon-brand-facebook has-text-primary" aria-hidden="true"></span>
+					</span>
+					<span>Facebook</span>
+				</a>
+			</li>
+			<li>
+				<a class="button is-text is-fullwidth has-flex-justify-content-start has-inner-focus is-small share-email" data-bi-name="email" href="mailto:?subject=%5BShared%20Article%5D%20ADO.NET%20code%20examples%20%7C%20Microsoft%20Docs&amp;body=ADO.NET%20code%20examples%20%7C%20Microsoft%20Docs%0A%0Ahttps%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fframework%2Fdata%2Fadonet%2Fado-net-code-examples%3FWT.mc_id%3Demail">
+					<span class="icon">
+						<span class="docon docon-mail-message-fill has-text-primary" aria-hidden="true"></span>
+					</span>
+					<span>Email</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>				</li>
+				<li>
+<div class="dropdown has-caret">
+	<button class="dropdown-trigger button is-text is-small is-icon-only-touch has-inner-focus" aria-controls="theme-menu" aria-expanded="false" title="Theme" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span class="is-visually-hidden-touch is-hidden-portrait">Theme</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu" role="menu">
+		<ul class="theme-selector has-padding-small">
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start is-selected" data-theme-to="light" aria-pressed="true">
+					<span class="theme-light has-margin-right-small">
+						<span class="theme-selector-icon css-variable-support has-border is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Light					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="dark" aria-pressed="false">
+					<span class="theme-dark has-margin-right-small">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Dark					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="high-contrast" aria-pressed="false">
+					<span class="theme-high-contrast has-margin-right-small">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+High contrast					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>				</li>
+				<li>
+					<a class="docs-sign-in auth-status-determined not-authenticated button is-text has-inner-focus has-text-primary is-small" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#">Sign in</a>
+					<div class="dropdown has-caret auth-status-determined authenticated">
+						<button class="dropdown-trigger button is-text has-inner-focus is-small is-icon-only-touch has-inner-focus" aria-label="Your Account" aria-controls="user-menu" aria-expanded="false">
+							<span class="icon" aria-hidden="true">
+								<span class="image">
+									<img class="has-body-background-medium is-rounded" data-profile-property="avatarThumbnailUrl">
+								</span>
+							</span>
+							<span class="is-inline-truncated has-margin-left-small" data-profile-property="userName"></span>
+						</button>
+						<div class="dropdown-menu box" id="user-menu" role="menu">
+							<div class="media is-user-dir">
+								<div class="media-left">
+									<span class="image is-64x64" aria-hidden="true">
+										<img class="has-body-background-medium is-rounded" data-profile-property="avatarUrl">
+									</span>
+								</div>
+								<div class="media-content">
+									<p class="title">
+										<span class="is-inline-truncated has-max-width-200" data-profile-property="userName"></span>
+									</p>
+									<p class="subtitle has-margin-bottom-none">
+										<span class="is-inline-truncated has-max-width-200" data-profile-property="upn"></span>
+									</p>
+									<ul class="is-unstyled has-margin-none has-margin-top-small">
+										<li><a href="https://docs.microsoft.com/profile" data-profile-property="profileUrl">Profile</a></li>
+										<li><a href="https://docs.microsoft.com/profile" data-profile-property="bookmarksUrl">Bookmarks</a></li>
+										<li><a href="https://docs.microsoft.com/profile" data-profile-property="collectionsUrl">Collections</a></li>
+										<li><a class="docs-sign-out" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#">Sign out</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<button type="button" class="contents-button button is-small is-text is-hidden-tablet has-inner-focus is-hidden-tablet" aria-label="Contents" data-bi-name="contents-expand-">
+				<span class="icon">
+					<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+				</span>
+				<span>Contents</span>
+			</button>
+		</div>
+	</div>
+
+		<div id="banner-holder" class="has-default-focus has-overflow-hidden">
+		</div>
+
+	<div id="disclaimer-holder" class="has-overflow-hidden has-default-focus"></div>
+	</div>
+
+	<div class="mainContainer  uhf-container has-top-padding  has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps is-gapless-mobile ">
+
+			<div id="left-container" class="left-container is-hidden-mobile column is-one-third-tablet is-one-quarter-desktop">
+				<nav id="affixed-left-container" class="is-fixed is-flex is-flex-column" role="navigation" aria-label="Primary" data-bi-name="left toc" style="width: 247.75px; top: 24px; bottom: 24px;"><form action="javascript:" role="search" aria-label="Search" class="is-full-width has-margin-bottom-small"><label class="visually-hidden" for="ax-7">Search</label><div class="autocomplete is-block" data-bi-name="autocomplete"><!---->
+		<div class="control has-icons-left">
+			<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="ax-7" class="autocomplete-input input control has-icons-left is-small is-full-width" type="text" aria-expanded="false" aria-owns="ax-8-listbox" aria-activedescendant="" placeholder="Filter by title">
+
+			<span class="icon is-small is-left" aria-hidden="true">
+				<span class="has-text-primary docon docon-filter"></span>
+			</span>
+
+			<span class="autocomplete-loader loader has-text-primary" aria-hidden="true" hidden=""></span>
+		</div>
+
+		<ul class="autocomplete-suggestions is-vertically-scrollable" role="listbox" id="ax-8-listbox" hidden="">
+			
+		</ul><!----></div></form><ul class="tree is-vertically-scrollable has-flex-grow has-flex-shrink" role="tree" aria-label="Table of contents" data-bi-name="tree"><li role="none"><a aria-setsize="11" aria-level="1" aria-posinset="1" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/">ADO.<wbr>NET</a></li><li role="none"><a aria-setsize="11" aria-level="1" aria-posinset="2" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/whats-new">What's New in ADO.<wbr>NET</a></li><li class="tree-item is-expanded" aria-setsize="11" aria-level="1" aria-posinset="3" role="treeitem" tabindex="-1" aria-expanded="true"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>ADO.<wbr>NET Overview</span><ul class="tree-group" role="group"><li role="none"><a aria-setsize="8" aria-level="2" aria-posinset="1" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview">ADO.<wbr>NET Overview</a></li><li role="none"><a aria-setsize="8" aria-level="2" aria-posinset="2" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-architecture">ADO.<wbr>NET Architecture</a></li><li role="none"><a aria-setsize="8" aria-level="2" aria-posinset="3" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-technology-options-and-guidelines">ADO.<wbr>NET Technology Options and Guidelines</a></li><li role="none"><a aria-setsize="8" aria-level="2" aria-posinset="4" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/linq-and-ado-net">LINQ and ADO.<wbr>NET</a></li><li role="none"><a aria-setsize="8" aria-level="2" aria-posinset="5" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers">.NET Framework Data Providers</a></li><li role="none"><a aria-setsize="8" aria-level="2" aria-posinset="6" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-datasets">ADO.<wbr>NET DataSets</a></li><li role="none"><a aria-setsize="8" aria-level="2" aria-posinset="7" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/side-by-side-execution">Side-by-Side Execution in ADO.<wbr>NET</a></li><li role="none"><a aria-setsize="8" aria-level="2" aria-posinset="8" role="treeitem" tabindex="0" class="tree-item is-leaf is-selected" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples">ADO.<wbr>NET Code Examples</a></li></ul></li><li class="tree-item" aria-setsize="11" aria-level="1" aria-posinset="4" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Securing ADO.<wbr>NET Applications</span></li><li class="tree-item" aria-setsize="11" aria-level="1" aria-posinset="5" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Data Type Mappings in ADO.<wbr>NET</span></li><li class="tree-item" aria-setsize="11" aria-level="1" aria-posinset="6" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Retrieving and Modifying Data in ADO.<wbr>NET</span></li><li class="tree-item" aria-setsize="11" aria-level="1" aria-posinset="7" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Entity Data Model</span></li><li class="tree-item" aria-setsize="11" aria-level="1" aria-posinset="8" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Oracle and ADO.<wbr>NET</span></li><li role="none"><a aria-setsize="11" aria-level="1" aria-posinset="9" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/">ADO.<wbr>NET Entity Framework</a></li><li role="none"><a aria-setsize="11" aria-level="1" aria-posinset="10" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/">SQL Server and ADO.<wbr>NET</a></li><li role="none"><a aria-setsize="11" aria-level="1" aria-posinset="11" role="treeitem" tabindex="-1" class="tree-item is-leaf" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/">DataSets, DataTables, and DataViews</a></li></ul><a class="button is-small is-text has-flex-justify-content-start has-inner-focus has-margin-top-small has-border-top has-border-bottom has-flex-shrink-none" href="https://docs.microsoft.com/en-us/dotnet/opbuildpdf/framework/data/adonet/toc.pdf?branch=live" data-bi-name="downloadPdf"><!---->
+		<span class="icon is-size-8 has-text-subtle">
+			<span aria-hidden="true" class="docon docon-arrow-down"></span>
+		</span>
+		<span><!---->Download PDF<!----></span><!----></a></nav>
+			</div>
+
+			<section class="primary-holder column is-two-thirds-tablet is-three-quarters-desktop">
+				<div class="columns is-gapless-mobile has-large-gaps ">
+
+
+				<div id="main-column" class="column  is-full is-four-fifths-desktop ">
+
+					<main id="main" role="main" class="content " data-bi-name="content" lang="en-us" dir="ltr">
+
+
+
+						<h1 id="adonet-code-examples">ADO.NET code examples</h1>
+
+						<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+							<li class="displayDate">
+								<time role="presentation" datetime="2017-03-30T00:00:00.000Z" data-article-date-source="ms.date">03/30/2017</time>
+							</li>
+								<li class="readingTime">12 minutes to read</li>
+							<li class="contributors-holder">
+								<a class="has-inner-focus" href="https://github.com/dotnet/docs/blob/master/docs/framework/data/adonet/ado-net-code-examples.md" title="14 Contributors" aria-label="14 Contributors">
+									<ul class="contributors" data-bi-name="contributors" aria-hidden="true">
+												<li><img src="./ADO.NET code examples _ Microsoft Docs_files/stevestein.png" data-src="https://github.com/stevestein.png?size=32" role="presentation"></li>
+												<li><img src="./ADO.NET code examples _ Microsoft Docs_files/Youssef1313.png" data-src="https://github.com/Youssef1313.png?size=32" role="presentation"></li>
+												<li><img src="./ADO.NET code examples _ Microsoft Docs_files/mairaw.png" data-src="https://github.com/mairaw.png?size=32" role="presentation"></li>
+												<li><img src="./ADO.NET code examples _ Microsoft Docs_files/nemrism.png" data-src="https://github.com/nemrism.png?size=32" role="presentation"></li>
+												<li><img src="./ADO.NET code examples _ Microsoft Docs_files/nschonni.png" data-src="https://github.com/nschonni.png?size=32" role="presentation"></li>
+										<li><span class="is-size-8 has-text-subtle">+9</span></li>
+									</ul>
+								</a>
+							</li>
+
+						</ul>
+
+						<nav id="center-doc-outline" class="doc-outline is-hidden-desktop" data-bi-name="intopic toc" role="navigation" aria-label="Article Outline">
+							<h3>In this article</h3>
+						<ol><li><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#adonet-data-provider-examples">ADO.NET data provider examples</a></li><li><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#entity-framework-examples">Entity Framework examples</a></li><li><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#linq-to-sql">LINQ to SQL</a></li><li><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#see-also">See also</a></li></ol></nav>
+
+
+						<!-- <content> -->
+							
+<p>The code listings in this topic demonstrate how to retrieve data from a database by using the following ADO.NET technologies:</p>
+<ul>
+<li><p>ADO.NET data providers:</p>
+<ul>
+<li><p><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#sqlclient" data-linktype="self-bookmark">SqlClient</a> (<code>System.Data.SqlClient</code>)</p>
+</li>
+<li><p><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#oledb" data-linktype="self-bookmark">OleDb</a> (<code>System.Data.OleDb</code>)</p>
+</li>
+<li><p><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#odbc" data-linktype="self-bookmark">Odbc</a> (<code>System.Data.Odbc</code>)</p>
+</li>
+<li><p><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#oracleclient" data-linktype="self-bookmark">OracleClient</a> (<code>System.Data.OracleClient</code>)</p>
+</li>
+</ul>
+</li>
+<li><p>ADO.NET Entity Framework:</p>
+<ul>
+<li><p><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#linq-to-entities" data-linktype="self-bookmark">LINQ to Entities</a></p>
+</li>
+<li><p><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#typed-objectquery" data-linktype="self-bookmark">Typed ObjectQuery</a></p>
+</li>
+<li><p><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#entityclient" data-linktype="self-bookmark">EntityClient</a> (<code>System.Data.EntityClient</code>)</p>
+</li>
+</ul>
+</li>
+<li><p><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#linq-to-sql" data-linktype="self-bookmark">LINQ to SQL</a></p>
+</li>
+</ul>
+<h2 id="adonet-data-provider-examples">ADO.NET data provider examples<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#adonet-data-provider-examples" aria-labelledby="adonet-data-provider-examples"></a></h2>
+<p>The following code listings demonstrate how to retrieve data from a database using ADO.NET data providers. The data is returned in a <code>DataReader</code>. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/retrieving-data-using-a-datareader" data-linktype="relative-path">Retrieving Data Using a DataReader</a>.</p>
+<h3 id="sqlclient">SqlClient<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#sqlclient" aria-labelledby="sqlclient"></a></h3>
+<p>The code in this example assumes that you can connect to the <code>Northwind</code> sample database on Microsoft SQL Server. The code creates a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlcommand" data-linktype="absolute-path">SqlCommand</a> to select rows from the Products table, adding a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlparameter" data-linktype="absolute-path">SqlParameter</a> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlconnection" data-linktype="absolute-path">SqlConnection</a> is opened inside a <code>using</code> block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldatareader" data-linktype="absolute-path">SqlDataReader</a>, and displays the results in the console window.</p>
+<div class="codeHeader" id="code-try-0" data-bi-name="code-header"><span class="language">C#</span><button type="button" class="action is-relative" data-bi-name="copy" aria-label="Copy code">
+				<span class="icon">
+					<span class="docon docon-edit-copy" role="presentation"></span>
+				</span>
+				<span>Copy</span>
+				<div class="successful-copy-alert is-absolute has-right-zero has-top-zero has-left-zero has-bottom-zero is-flex has-flex-align-items-center has-flex-justify-content-center has-text-success-invert has-background-success is-transparent" aria-hidden="true">
+					<span class="icon is-size-4">
+						<span class="docon docon-check-mark" role="presentation"></span>
+					</span>
+				</div>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" name="DataWorks SampleApp.SqlClient#1" data-author-content="using System;
+using System.Data;
+using System.Data.SqlClient;
+
+class Program
+{
+    static void Main()
+    {
+        string connectionString =
+            &quot;Data Source=(local);Initial Catalog=Northwind;&quot;
+            + &quot;Integrated Security=true&quot;;
+
+        // Provide the query string with a parameter placeholder.
+        string queryString =
+            &quot;SELECT ProductID, UnitPrice, ProductName from dbo.products &quot;
+                + &quot;WHERE UnitPrice &gt; @pricePoint &quot;
+                + &quot;ORDER BY UnitPrice DESC;&quot;;
+
+        // Specify the parameter value.
+        int paramValue = 5;
+
+        // Create and open the connection in a using block. This
+        // ensures that all resources will be closed and disposed
+        // when the code exits.
+        using (SqlConnection connection =
+            new SqlConnection(connectionString))
+        {
+            // Create the Command and Parameter objects.
+            SqlCommand command = new SqlCommand(queryString, connection);
+            command.Parameters.AddWithValue(&quot;@pricePoint&quot;, paramValue);
+
+            // Open the connection in a try/catch block. 
+            // Create and execute the DataReader, writing the result
+            // set to the console window.
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Console.WriteLine(&quot;\t{0}\t{1}\t{2}&quot;,
+                        reader[0], reader[1], reader[2]);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            Console.ReadLine();
+        }
+    }
+"><span><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Data;
+<span class="hljs-keyword">using</span> System.Data.SqlClient;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)</span>
+    {
+        <span class="hljs-keyword">string</span> connectionString =
+            <span class="hljs-string">"Data Source=(local);Initial Catalog=Northwind;"</span>
+            + <span class="hljs-string">"Integrated Security=true"</span>;
+
+        <span class="hljs-comment">// Provide the query string with a parameter placeholder.</span>
+        <span class="hljs-keyword">string</span> queryString =
+            <span class="hljs-string">"SELECT ProductID, UnitPrice, ProductName from dbo.products "</span>
+                + <span class="hljs-string">"WHERE UnitPrice &gt; @pricePoint "</span>
+                + <span class="hljs-string">"ORDER BY UnitPrice DESC;"</span>;
+
+        <span class="hljs-comment">// Specify the parameter value.</span>
+        <span class="hljs-keyword">int</span> paramValue = <span class="hljs-number">5</span>;
+
+        <span class="hljs-comment">// Create and open the connection in a using block. This</span>
+        <span class="hljs-comment">// ensures that all resources will be closed and disposed</span>
+        <span class="hljs-comment">// when the code exits.</span>
+        <span class="hljs-keyword">using</span> (SqlConnection connection =
+            <span class="hljs-keyword">new</span> SqlConnection(connectionString))
+        {
+            <span class="hljs-comment">// Create the Command and Parameter objects.</span>
+            SqlCommand command = <span class="hljs-keyword">new</span> SqlCommand(queryString, connection);
+            command.Parameters.AddWithValue(<span class="hljs-string">"@pricePoint"</span>, paramValue);
+
+            <span class="hljs-comment">// Open the connection in a try/catch block. </span>
+            <span class="hljs-comment">// Create and execute the DataReader, writing the result</span>
+            <span class="hljs-comment">// set to the console window.</span>
+            <span class="hljs-keyword">try</span>
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                <span class="hljs-keyword">while</span> (reader.Read())
+                {
+                    Console.WriteLine(<span class="hljs-string">"\t{0}\t{1}\t{2}"</span>,
+                        reader[<span class="hljs-number">0</span>], reader[<span class="hljs-number">1</span>], reader[<span class="hljs-number">2</span>]);
+                }
+                reader.Close();
+            }
+            <span class="hljs-keyword">catch</span> (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            Console.ReadLine();
+        }
+    }
+</span></code></pre><pre tabindex="0" class="has-inner-focus" hidden=""><code class="lang-vb" name="DataWorks SampleApp.SqlClient#1" data-author-content="Option Explicit On
+Option Strict On
+
+Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class Program
+    Public Shared Sub Main()
+
+        Dim connectionString As String = _
+            &quot;Data Source=(local);Initial Catalog=Northwind;&quot; _
+            &amp; &quot;Integrated Security=true&quot;
+
+        &#39; Provide the query string with a parameter placeholder.
+        Dim queryString As String = _
+            &quot;SELECT ProductID, UnitPrice, ProductName from dbo.Products &quot; _
+            &amp; &quot;WHERE UnitPrice &gt; @pricePoint &quot; _
+            &amp; &quot;ORDER BY UnitPrice DESC;&quot;
+
+        &#39; Specify the parameter value.
+        Dim paramValue As Integer = 5
+
+        &#39; Create and open the connection in a using block. This
+        &#39; ensures that all resources will be closed and disposed
+        &#39; when the code exits.
+        Using connection As New SqlConnection(connectionString)
+
+            &#39; Create the Command and Parameter objects.
+            Dim command As New SqlCommand(queryString, connection)
+            command.Parameters.AddWithValue(&quot;@pricePoint&quot;, paramValue)
+
+            &#39; Open the connection in a try/catch block. 
+            &#39; Create and execute the DataReader, writing the result
+            &#39; set to the console window.
+            Try
+                connection.Open()
+                Dim dataReader As SqlDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+                    Console.WriteLine( _
+                        vbTab &amp; &quot;{0}&quot; &amp; vbTab &amp; &quot;{1}&quot; &amp; vbTab &amp; &quot;{2}&quot;, _
+                     dataReader(0), dataReader(1), dataReader(2))
+                Loop
+                dataReader.Close()
+
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+            Console.ReadLine()
+        End Using
+    End Sub
+End Class
+">Option Explicit On
+Option Strict On
+
+Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class Program
+    Public Shared Sub Main()
+
+        Dim connectionString As String = _
+            "Data Source=(local);Initial Catalog=Northwind;" _
+            &amp; "Integrated Security=true"
+
+        ' Provide the query string with a parameter placeholder.
+        Dim queryString As String = _
+            "SELECT ProductID, UnitPrice, ProductName from dbo.Products " _
+            &amp; "WHERE UnitPrice &gt; @pricePoint " _
+            &amp; "ORDER BY UnitPrice DESC;"
+
+        ' Specify the parameter value.
+        Dim paramValue As Integer = 5
+
+        ' Create and open the connection in a using block. This
+        ' ensures that all resources will be closed and disposed
+        ' when the code exits.
+        Using connection As New SqlConnection(connectionString)
+
+            ' Create the Command and Parameter objects.
+            Dim command As New SqlCommand(queryString, connection)
+            command.Parameters.AddWithValue("@pricePoint", paramValue)
+
+            ' Open the connection in a try/catch block. 
+            ' Create and execute the DataReader, writing the result
+            ' set to the console window.
+            Try
+                connection.Open()
+                Dim dataReader As SqlDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+                    Console.WriteLine( _
+                        vbTab &amp; "{0}" &amp; vbTab &amp; "{1}" &amp; vbTab &amp; "{2}", _
+                     dataReader(0), dataReader(1), dataReader(2))
+                Loop
+                dataReader.Close()
+
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+            Console.ReadLine()
+        End Using
+    End Sub
+End Class
+</code></pre><h3 id="oledb">OleDb<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#oledb" aria-labelledby="oledb"></a></h3>
+<p>The code in this example assumes that you can connect to the Microsoft Access Northwind sample database. The code creates a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.oledb.oledbcommand" data-linktype="absolute-path">OleDbCommand</a> to select rows from the Products table, adding a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.oledb.oledbparameter" data-linktype="absolute-path">OleDbParameter</a> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.oledb.oledbconnection" data-linktype="absolute-path">OleDbConnection</a> is opened inside of a <code>using</code> block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.oledb.oledbdatareader" data-linktype="absolute-path">OleDbDataReader</a>, and displays the results in the console window.</p>
+<div class="codeHeader" id="code-try-1" data-bi-name="code-header"><span class="language">C#</span><button type="button" class="action is-relative" data-bi-name="copy" aria-label="Copy code">
+				<span class="icon">
+					<span class="docon docon-edit-copy" role="presentation"></span>
+				</span>
+				<span>Copy</span>
+				<div class="successful-copy-alert is-absolute has-right-zero has-top-zero has-left-zero has-bottom-zero is-flex has-flex-align-items-center has-flex-justify-content-center has-text-success-invert has-background-success is-transparent" aria-hidden="true">
+					<span class="icon is-size-4">
+						<span class="docon docon-check-mark" role="presentation"></span>
+					</span>
+				</div>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" name="DataWorks SampleApp.OleDb#1" data-author-content="using System;
+using System.Data;
+using System.Data.OleDb;
+
+class Program
+{
+    static void Main()
+    {
+        // The connection string assumes that the Access 
+        // Northwind.mdb is located in the c:\Data folder.
+        string connectionString =
+        &quot;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=&quot;
+            + &quot;c:\\Data\\Northwind.mdb;User Id=admin;Password=;&quot;;
+
+        // Provide the query string with a parameter placeholder.
+        string queryString =
+            &quot;SELECT ProductID, UnitPrice, ProductName from products &quot;
+                + &quot;WHERE UnitPrice &gt; ? &quot;
+                + &quot;ORDER BY UnitPrice DESC;&quot;;
+
+        // Specify the parameter value.
+        int paramValue = 5;
+
+        // Create and open the connection in a using block. This
+        // ensures that all resources will be closed and disposed
+        // when the code exits.
+        using (OleDbConnection connection =
+            new OleDbConnection(connectionString))
+        {
+            // Create the Command and Parameter objects.
+            OleDbCommand command = new OleDbCommand(queryString, connection);
+            command.Parameters.AddWithValue(&quot;@pricePoint&quot;, paramValue);
+
+            // Open the connection in a try/catch block. 
+            // Create and execute the DataReader, writing the result
+            // set to the console window.
+            try
+            {
+                connection.Open();
+                OleDbDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Console.WriteLine(&quot;\t{0}\t{1}\t{2}&quot;,
+                        reader[0], reader[1], reader[2]);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            Console.ReadLine();
+        }
+    }
+"><span><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Data;
+<span class="hljs-keyword">using</span> System.Data.OleDb;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)</span>
+    {
+        <span class="hljs-comment">// The connection string assumes that the Access </span>
+        <span class="hljs-comment">// Northwind.mdb is located in the c:\Data folder.</span>
+        <span class="hljs-keyword">string</span> connectionString =
+        <span class="hljs-string">"Provider=Microsoft.Jet.OLEDB.4.0;Data Source="</span>
+            + <span class="hljs-string">"c:\\Data\\Northwind.mdb;User Id=admin;Password=;"</span>;
+
+        <span class="hljs-comment">// Provide the query string with a parameter placeholder.</span>
+        <span class="hljs-keyword">string</span> queryString =
+            <span class="hljs-string">"SELECT ProductID, UnitPrice, ProductName from products "</span>
+                + <span class="hljs-string">"WHERE UnitPrice &gt; ? "</span>
+                + <span class="hljs-string">"ORDER BY UnitPrice DESC;"</span>;
+
+        <span class="hljs-comment">// Specify the parameter value.</span>
+        <span class="hljs-keyword">int</span> paramValue = <span class="hljs-number">5</span>;
+
+        <span class="hljs-comment">// Create and open the connection in a using block. This</span>
+        <span class="hljs-comment">// ensures that all resources will be closed and disposed</span>
+        <span class="hljs-comment">// when the code exits.</span>
+        <span class="hljs-keyword">using</span> (OleDbConnection connection =
+            <span class="hljs-keyword">new</span> OleDbConnection(connectionString))
+        {
+            <span class="hljs-comment">// Create the Command and Parameter objects.</span>
+            OleDbCommand command = <span class="hljs-keyword">new</span> OleDbCommand(queryString, connection);
+            command.Parameters.AddWithValue(<span class="hljs-string">"@pricePoint"</span>, paramValue);
+
+            <span class="hljs-comment">// Open the connection in a try/catch block. </span>
+            <span class="hljs-comment">// Create and execute the DataReader, writing the result</span>
+            <span class="hljs-comment">// set to the console window.</span>
+            <span class="hljs-keyword">try</span>
+            {
+                connection.Open();
+                OleDbDataReader reader = command.ExecuteReader();
+                <span class="hljs-keyword">while</span> (reader.Read())
+                {
+                    Console.WriteLine(<span class="hljs-string">"\t{0}\t{1}\t{2}"</span>,
+                        reader[<span class="hljs-number">0</span>], reader[<span class="hljs-number">1</span>], reader[<span class="hljs-number">2</span>]);
+                }
+                reader.Close();
+            }
+            <span class="hljs-keyword">catch</span> (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            Console.ReadLine();
+        }
+    }
+</span></code></pre><pre tabindex="0" class="has-inner-focus" hidden=""><code class="lang-vb" name="DataWorks SampleApp.OleDb#1" data-author-content="Option Explicit On
+Option Strict On
+
+Imports System.Data
+Imports System.Data.OleDb
+
+Public Class Program
+    Public Shared Sub Main()
+
+        &#39; The connection string assumes that the Access 
+        &#39; Northwind.mdb is located in the c:\Data folder.
+        Dim connectionString As String = _
+             &quot;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=&quot; _
+            &amp; &quot;c:\Data\Northwind.mdb;User Id=admin;Password=;&quot;
+
+        &#39; Provide the query string with a parameter placeholder.
+        Dim queryString As String = _
+            &quot;SELECT ProductID, UnitPrice, ProductName from Products &quot; _
+            &amp; &quot;WHERE UnitPrice &gt; ? &quot; _
+            &amp; &quot;ORDER BY UnitPrice DESC;&quot;
+
+        &#39; Specify the parameter value.
+        Dim paramValue As Integer = 5
+
+        &#39; Create and open the connection in a using block. This
+        &#39; ensures that all resources will be closed and disposed
+        &#39; when the code exits.
+        Using connection As New OleDbConnection(connectionString)
+
+            &#39; Create the Command and Parameter objects.
+            Dim command As New OleDbCommand(queryString, connection)
+            command.Parameters.AddWithValue(&quot;@pricePoint&quot;, paramValue)
+
+            &#39; Open the connection in a try/catch block. 
+            &#39; Create and execute the DataReader, writing the result
+            &#39; set to the console window.
+            Try
+                connection.Open()
+                Dim dataReader As OleDbDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+                    Console.WriteLine( _
+                        vbTab &amp; &quot;{0}&quot; &amp; vbTab &amp; &quot;{1}&quot; &amp; vbTab &amp; &quot;{2}&quot;, _
+                     dataReader(0), dataReader(1), dataReader(2))
+                Loop
+                dataReader.Close()
+
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+            Console.ReadLine()
+        End Using
+    End Sub
+End Class
+">Option Explicit On
+Option Strict On
+
+Imports System.Data
+Imports System.Data.OleDb
+
+Public Class Program
+    Public Shared Sub Main()
+
+        ' The connection string assumes that the Access 
+        ' Northwind.mdb is located in the c:\Data folder.
+        Dim connectionString As String = _
+             "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" _
+            &amp; "c:\Data\Northwind.mdb;User Id=admin;Password=;"
+
+        ' Provide the query string with a parameter placeholder.
+        Dim queryString As String = _
+            "SELECT ProductID, UnitPrice, ProductName from Products " _
+            &amp; "WHERE UnitPrice &gt; ? " _
+            &amp; "ORDER BY UnitPrice DESC;"
+
+        ' Specify the parameter value.
+        Dim paramValue As Integer = 5
+
+        ' Create and open the connection in a using block. This
+        ' ensures that all resources will be closed and disposed
+        ' when the code exits.
+        Using connection As New OleDbConnection(connectionString)
+
+            ' Create the Command and Parameter objects.
+            Dim command As New OleDbCommand(queryString, connection)
+            command.Parameters.AddWithValue("@pricePoint", paramValue)
+
+            ' Open the connection in a try/catch block. 
+            ' Create and execute the DataReader, writing the result
+            ' set to the console window.
+            Try
+                connection.Open()
+                Dim dataReader As OleDbDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+                    Console.WriteLine( _
+                        vbTab &amp; "{0}" &amp; vbTab &amp; "{1}" &amp; vbTab &amp; "{2}", _
+                     dataReader(0), dataReader(1), dataReader(2))
+                Loop
+                dataReader.Close()
+
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+            Console.ReadLine()
+        End Using
+    End Sub
+End Class
+</code></pre><h3 id="odbc">Odbc<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#odbc" aria-labelledby="odbc"></a></h3>
+<p>The code in this example assumes that you can connect to the Microsoft Access Northwind sample database. The code creates a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.odbc.odbccommand" data-linktype="absolute-path">OdbcCommand</a> to select rows from the Products table, adding a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.odbc.odbcparameter" data-linktype="absolute-path">OdbcParameter</a> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.odbc.odbcconnection" data-linktype="absolute-path">OdbcConnection</a> is opened inside a <code>using</code> block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.odbc.odbcdatareader" data-linktype="absolute-path">OdbcDataReader</a>, and displays the results in the console window.</p>
+<div class="codeHeader" id="code-try-2" data-bi-name="code-header"><span class="language">C#</span><button type="button" class="action is-relative" data-bi-name="copy" aria-label="Copy code">
+				<span class="icon">
+					<span class="docon docon-edit-copy" role="presentation"></span>
+				</span>
+				<span>Copy</span>
+				<div class="successful-copy-alert is-absolute has-right-zero has-top-zero has-left-zero has-bottom-zero is-flex has-flex-align-items-center has-flex-justify-content-center has-text-success-invert has-background-success is-transparent" aria-hidden="true">
+					<span class="icon is-size-4">
+						<span class="docon docon-check-mark" role="presentation"></span>
+					</span>
+				</div>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" name="DataWorks SampleApp.Odbc#1" data-author-content="using System;
+using System.Data;
+using System.Data.Odbc;
+
+class Program
+{
+    static void Main()
+    {
+        // The connection string assumes that the Access 
+        // Northwind.mdb is located in the c:\Data folder.
+        string connectionString =
+            &quot;Driver={Microsoft Access Driver (*.mdb)};&quot;
+            + &quot;Dbq=c:\\Data\\Northwind.mdb;Uid=Admin;Pwd=;&quot;;
+
+        // Provide the query string with a parameter placeholder.
+        string queryString =
+            &quot;SELECT ProductID, UnitPrice, ProductName from products &quot;
+                + &quot;WHERE UnitPrice &gt; ? &quot;
+                + &quot;ORDER BY UnitPrice DESC;&quot;;
+
+        // Specify the parameter value.
+        int paramValue = 5;
+
+        // Create and open the connection in a using block. This
+        // ensures that all resources will be closed and disposed
+        // when the code exits.
+        using (OdbcConnection connection =
+            new OdbcConnection(connectionString))
+        {
+            // Create the Command and Parameter objects.
+            OdbcCommand command = new OdbcCommand(queryString, connection);
+            command.Parameters.AddWithValue(&quot;@pricePoint&quot;, paramValue);
+
+            // Open the connection in a try/catch block. 
+            // Create and execute the DataReader, writing the result
+            // set to the console window.
+            try
+            {
+                connection.Open();
+                OdbcDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Console.WriteLine(&quot;\t{0}\t{1}\t{2}&quot;,
+                        reader[0], reader[1], reader[2]);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            Console.ReadLine();
+        }
+    }
+}
+"><span><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Data;
+<span class="hljs-keyword">using</span> System.Data.Odbc;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)</span>
+    {
+        <span class="hljs-comment">// The connection string assumes that the Access </span>
+        <span class="hljs-comment">// Northwind.mdb is located in the c:\Data folder.</span>
+        <span class="hljs-keyword">string</span> connectionString =
+            <span class="hljs-string">"Driver={Microsoft Access Driver (*.mdb)};"</span>
+            + <span class="hljs-string">"Dbq=c:\\Data\\Northwind.mdb;Uid=Admin;Pwd=;"</span>;
+
+        <span class="hljs-comment">// Provide the query string with a parameter placeholder.</span>
+        <span class="hljs-keyword">string</span> queryString =
+            <span class="hljs-string">"SELECT ProductID, UnitPrice, ProductName from products "</span>
+                + <span class="hljs-string">"WHERE UnitPrice &gt; ? "</span>
+                + <span class="hljs-string">"ORDER BY UnitPrice DESC;"</span>;
+
+        <span class="hljs-comment">// Specify the parameter value.</span>
+        <span class="hljs-keyword">int</span> paramValue = <span class="hljs-number">5</span>;
+
+        <span class="hljs-comment">// Create and open the connection in a using block. This</span>
+        <span class="hljs-comment">// ensures that all resources will be closed and disposed</span>
+        <span class="hljs-comment">// when the code exits.</span>
+        <span class="hljs-keyword">using</span> (OdbcConnection connection =
+            <span class="hljs-keyword">new</span> OdbcConnection(connectionString))
+        {
+            <span class="hljs-comment">// Create the Command and Parameter objects.</span>
+            OdbcCommand command = <span class="hljs-keyword">new</span> OdbcCommand(queryString, connection);
+            command.Parameters.AddWithValue(<span class="hljs-string">"@pricePoint"</span>, paramValue);
+
+            <span class="hljs-comment">// Open the connection in a try/catch block. </span>
+            <span class="hljs-comment">// Create and execute the DataReader, writing the result</span>
+            <span class="hljs-comment">// set to the console window.</span>
+            <span class="hljs-keyword">try</span>
+            {
+                connection.Open();
+                OdbcDataReader reader = command.ExecuteReader();
+                <span class="hljs-keyword">while</span> (reader.Read())
+                {
+                    Console.WriteLine(<span class="hljs-string">"\t{0}\t{1}\t{2}"</span>,
+                        reader[<span class="hljs-number">0</span>], reader[<span class="hljs-number">1</span>], reader[<span class="hljs-number">2</span>]);
+                }
+                reader.Close();
+            }
+            <span class="hljs-keyword">catch</span> (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            Console.ReadLine();
+        }
+    }
+}
+</span></code></pre><pre tabindex="0" class="has-inner-focus" hidden=""><code class="lang-vb" name="DataWorks SampleApp.Odbc#1" data-author-content="Option Explicit On
+Option Strict On
+
+Imports System.Data
+Imports System.Data.Odbc
+
+Public Class Program
+    Public Shared Sub Main()
+
+        &#39; The connection string assumes that the Access 
+        &#39; Northwind.mdb is located in the c:\Data folder.
+        Dim connectionString As String = _
+            &quot;Driver={Microsoft Access Driver (*.mdb)};&quot; _
+           &amp; &quot;Dbq=c:\Data\Northwind.mdb;Uid=Admin;Pwd=;&quot;
+
+        &#39; Provide the query string with a parameter placeholder.
+        Dim queryString As String = _
+            &quot;SELECT ProductID, UnitPrice, ProductName from Products &quot; _
+            &amp; &quot;WHERE UnitPrice &gt; ? &quot; _
+            &amp; &quot;ORDER BY UnitPrice DESC;&quot;
+
+        &#39; Specify the parameter value.
+        Dim paramValue As Integer = 5
+
+        &#39; Create and open the connection in a using block. This
+        &#39; ensures that all resources will be closed and disposed
+        &#39; when the code exits.
+        Using connection As New OdbcConnection(connectionString)
+
+            &#39; Create the Command and Parameter objects.
+            Dim command As New OdbcCommand(queryString, connection)
+            command.Parameters.AddWithValue(&quot;@pricePoint&quot;, paramValue)
+
+            &#39; Open the connection in a try/catch block. 
+            &#39; Create and execute the DataReader, writing the result
+            &#39; set to the console window.
+            Try
+                connection.Open()
+                Dim dataReader As OdbcDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+                    Console.WriteLine( _
+                        vbTab &amp; &quot;{0}&quot; &amp; vbTab &amp; &quot;{1}&quot; &amp; vbTab &amp; &quot;{2}&quot;, _
+                     dataReader(0), dataReader(1), dataReader(2))
+                Loop
+                dataReader.Close()
+
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+            Console.ReadLine()
+        End Using
+    End Sub
+End Class
+">Option Explicit On
+Option Strict On
+
+Imports System.Data
+Imports System.Data.Odbc
+
+Public Class Program
+    Public Shared Sub Main()
+
+        ' The connection string assumes that the Access 
+        ' Northwind.mdb is located in the c:\Data folder.
+        Dim connectionString As String = _
+            "Driver={Microsoft Access Driver (*.mdb)};" _
+           &amp; "Dbq=c:\Data\Northwind.mdb;Uid=Admin;Pwd=;"
+
+        ' Provide the query string with a parameter placeholder.
+        Dim queryString As String = _
+            "SELECT ProductID, UnitPrice, ProductName from Products " _
+            &amp; "WHERE UnitPrice &gt; ? " _
+            &amp; "ORDER BY UnitPrice DESC;"
+
+        ' Specify the parameter value.
+        Dim paramValue As Integer = 5
+
+        ' Create and open the connection in a using block. This
+        ' ensures that all resources will be closed and disposed
+        ' when the code exits.
+        Using connection As New OdbcConnection(connectionString)
+
+            ' Create the Command and Parameter objects.
+            Dim command As New OdbcCommand(queryString, connection)
+            command.Parameters.AddWithValue("@pricePoint", paramValue)
+
+            ' Open the connection in a try/catch block. 
+            ' Create and execute the DataReader, writing the result
+            ' set to the console window.
+            Try
+                connection.Open()
+                Dim dataReader As OdbcDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+                    Console.WriteLine( _
+                        vbTab &amp; "{0}" &amp; vbTab &amp; "{1}" &amp; vbTab &amp; "{2}", _
+                     dataReader(0), dataReader(1), dataReader(2))
+                Loop
+                dataReader.Close()
+
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+            Console.ReadLine()
+        End Using
+    End Sub
+End Class
+</code></pre><h3 id="oracleclient">OracleClient<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#oracleclient" aria-labelledby="oracleclient"></a></h3>
+<p>The code in this example assumes a connection to DEMO.CUSTOMER on an Oracle server. You must also add a reference to the System.Data.OracleClient.dll. The code returns the data in an <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.oracleclient.oracledatareader" data-linktype="absolute-path">OracleDataReader</a>.</p>
+<div class="codeHeader" id="code-try-3" data-bi-name="code-header"><span class="language">C#</span><button type="button" class="action is-relative" data-bi-name="copy" aria-label="Copy code">
+				<span class="icon">
+					<span class="docon docon-edit-copy" role="presentation"></span>
+				</span>
+				<span>Copy</span>
+				<div class="successful-copy-alert is-absolute has-right-zero has-top-zero has-left-zero has-bottom-zero is-flex has-flex-align-items-center has-flex-justify-content-center has-text-success-invert has-background-success is-transparent" aria-hidden="true">
+					<span class="icon is-size-4">
+						<span class="docon docon-check-mark" role="presentation"></span>
+					</span>
+				</div>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" name="DataWorks SampleApp.Oracle#1" data-author-content="using System;
+using System.Data;
+using System.Data.OracleClient;
+
+class Program
+{
+    static void Main()
+    {
+        string connectionString = 
+            &quot;Data Source=ThisOracleServer;Integrated Security=yes;&quot;;
+        string queryString =
+            &quot;SELECT CUSTOMER_ID, NAME FROM DEMO.CUSTOMER&quot;;
+        using (OracleConnection connection =
+                   new OracleConnection(connectionString))
+        {
+            OracleCommand command = connection.CreateCommand();
+            command.CommandText = queryString;
+
+            try
+            {
+                connection.Open();
+
+                OracleDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Console.WriteLine(&quot;\t{0}\t{1}&quot;,
+                        reader[0], reader[1]);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+}
+"><span><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Data;
+<span class="hljs-keyword">using</span> System.Data.OracleClient;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)</span>
+    {
+        <span class="hljs-keyword">string</span> connectionString = 
+            <span class="hljs-string">"Data Source=ThisOracleServer;Integrated Security=yes;"</span>;
+        <span class="hljs-keyword">string</span> queryString =
+            <span class="hljs-string">"SELECT CUSTOMER_ID, NAME FROM DEMO.CUSTOMER"</span>;
+        <span class="hljs-keyword">using</span> (OracleConnection connection =
+                   <span class="hljs-keyword">new</span> OracleConnection(connectionString))
+        {
+            OracleCommand command = connection.CreateCommand();
+            command.CommandText = queryString;
+
+            <span class="hljs-keyword">try</span>
+            {
+                connection.Open();
+
+                OracleDataReader reader = command.ExecuteReader();
+
+                <span class="hljs-keyword">while</span> (reader.Read())
+                {
+                    Console.WriteLine(<span class="hljs-string">"\t{0}\t{1}"</span>,
+                        reader[<span class="hljs-number">0</span>], reader[<span class="hljs-number">1</span>]);
+                }
+                reader.Close();
+            }
+            <span class="hljs-keyword">catch</span> (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+}
+</span></code></pre><pre tabindex="0" class="has-inner-focus" hidden=""><code class="lang-vb" name="DataWorks SampleApp.Oracle#1" data-author-content="Option Explicit On
+Option Strict On
+
+Imports System.Data
+Imports System.Data.OracleClient
+
+Public Class Program
+    Public Shared Sub Main()
+
+        Dim connectionString As String = _
+            &quot;Data Source=ThisOracleServer;Integrated Security=yes;&quot;
+
+        Dim queryString As String = _
+            &quot;SELECT CUSTOMER_ID, NAME FROM DEMO.CUSTOMER&quot;
+
+        Using connection As New OracleConnection(connectionString)
+            Dim command As OracleCommand = connection.CreateCommand()
+            command.CommandText = queryString
+            Try
+                connection.Open()
+                Dim dataReader As OracleDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+                    Console.WriteLine(vbTab &amp; &quot;{0}&quot; &amp; vbTab &amp; &quot;{1}&quot;, _
+                     dataReader(0), dataReader(1))
+                Loop
+                dataReader.Close()
+
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+        End Using
+    End Sub
+End Class
+">Option Explicit On
+Option Strict On
+
+Imports System.Data
+Imports System.Data.OracleClient
+
+Public Class Program
+    Public Shared Sub Main()
+
+        Dim connectionString As String = _
+            "Data Source=ThisOracleServer;Integrated Security=yes;"
+
+        Dim queryString As String = _
+            "SELECT CUSTOMER_ID, NAME FROM DEMO.CUSTOMER"
+
+        Using connection As New OracleConnection(connectionString)
+            Dim command As OracleCommand = connection.CreateCommand()
+            command.CommandText = queryString
+            Try
+                connection.Open()
+                Dim dataReader As OracleDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+                    Console.WriteLine(vbTab &amp; "{0}" &amp; vbTab &amp; "{1}", _
+                     dataReader(0), dataReader(1))
+                Loop
+                dataReader.Close()
+
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+        End Using
+    End Sub
+End Class
+</code></pre><h2 id="entity-framework-examples">Entity Framework examples<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#entity-framework-examples" aria-labelledby="entity-framework-examples"></a></h2>
+<p>The following code listings demonstrate how to retrieve data from a data source by querying entities in an Entity Data Model (EDM). These examples use a model based on the Northwind sample database. For more information about Entity Framework, see <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/overview" data-linktype="relative-path">Entity Framework Overview</a>.</p>
+<h3 id="linq-to-entities">LINQ to Entities<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#linq-to-entities" aria-labelledby="linq-to-entities"></a></h3>
+<p>The code in this example uses a LINQ query to return data as Categories objects, which are projected as an anonymous type that contains only the CategoryID and CategoryName properties. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/linq-to-entities" data-linktype="relative-path">LINQ to Entities Overview</a>.</p>
+<div class="codeHeader" id="code-try-4" data-bi-name="code-header"><span class="language">C#</span><button type="button" class="action is-relative" data-bi-name="copy" aria-label="Copy code">
+				<span class="icon">
+					<span class="docon docon-edit-copy" role="presentation"></span>
+				</span>
+				<span>Copy</span>
+				<div class="successful-copy-alert is-absolute has-right-zero has-top-zero has-left-zero has-bottom-zero is-flex has-flex-align-items-center has-flex-justify-content-center has-text-success-invert has-background-success is-transparent" aria-hidden="true">
+					<span class="icon is-size-4">
+						<span class="docon docon-check-mark" role="presentation"></span>
+					</span>
+				</div>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="using System;
+using System.Linq;
+using System.Data.Objects;
+using NorthwindModel;
+
+class LinqSample
+{
+    public static void ExecuteQuery()
+    {
+        using (NorthwindEntities context = new NorthwindEntities())
+        {
+            try
+            {
+                var query = from category in context.Categories
+                            select new
+                            {
+                                categoryID = category.CategoryID,
+                                categoryName = category.CategoryName
+                            };
+
+                foreach (var categoryInfo in query)
+                {
+                    Console.WriteLine(&quot;\t{0}\t{1}&quot;,
+                        categoryInfo.categoryID, categoryInfo.categoryName);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+}
+"><span><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Linq;
+<span class="hljs-keyword">using</span> System.Data.Objects;
+<span class="hljs-keyword">using</span> NorthwindModel;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title">LinqSample</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ExecuteQuery</span>(<span class="hljs-params"></span>)</span>
+    {
+        <span class="hljs-keyword">using</span> (NorthwindEntities context = <span class="hljs-keyword">new</span> NorthwindEntities())
+        {
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-keyword">var</span> query = <span class="hljs-keyword">from</span> category <span class="hljs-keyword">in</span> context.Categories
+                            <span class="hljs-keyword">select</span> <span class="hljs-keyword">new</span>
+                            {
+                                categoryID = category.CategoryID,
+                                categoryName = category.CategoryName
+                            };
+
+                <span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">var</span> categoryInfo <span class="hljs-keyword">in</span> query)
+                {
+                    Console.WriteLine(<span class="hljs-string">"\t{0}\t{1}"</span>,
+                        categoryInfo.categoryID, categoryInfo.categoryName);
+                }
+            }
+            <span class="hljs-keyword">catch</span> (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+}
+</span></code></pre>
+<pre tabindex="0" class="has-inner-focus" hidden=""><code class="lang-vb" data-author-content="Option Explicit On
+Option Strict On
+
+Imports System.Linq
+Imports System.Data.Objects
+Imports NorthwindModel
+
+Class LinqSample
+    Public Shared Sub ExecuteQuery()
+        Using context As NorthwindEntities = New NorthwindEntities()
+            Try
+                Dim query = From category In context.Categories _
+                            Select New With _
+                            { _
+                                .categoryID = category.CategoryID, _
+                                .categoryName = category.CategoryName _
+                            }
+
+                For Each categoryInfo In query
+                    Console.WriteLine(vbTab &amp; &quot;{0}&quot; &amp; vbTab &amp; &quot;{1}&quot;, _
+                        categoryInfo.categoryID, categoryInfo.categoryName)
+                Next
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+        End Using
+    End Sub
+End Class
+">Option Explicit On
+Option Strict On
+
+Imports System.Linq
+Imports System.Data.Objects
+Imports NorthwindModel
+
+Class LinqSample
+    Public Shared Sub ExecuteQuery()
+        Using context As NorthwindEntities = New NorthwindEntities()
+            Try
+                Dim query = From category In context.Categories _
+                            Select New With _
+                            { _
+                                .categoryID = category.CategoryID, _
+                                .categoryName = category.CategoryName _
+                            }
+
+                For Each categoryInfo In query
+                    Console.WriteLine(vbTab &amp; "{0}" &amp; vbTab &amp; "{1}", _
+                        categoryInfo.categoryID, categoryInfo.categoryName)
+                Next
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+        End Using
+    End Sub
+End Class
+</code></pre>
+<h3 id="typed-objectquery">Typed ObjectQuery<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#typed-objectquery" aria-labelledby="typed-objectquery"></a></h3>
+<p>The code in this example uses an <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.objects.objectquery-1" data-linktype="absolute-path">ObjectQuery&lt;T&gt;</a> to return data as Categories objects. For more information, see <a href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896241(v=vs.100)" data-linktype="external">Object Queries</a>.</p>
+<div class="codeHeader" id="code-try-5" data-bi-name="code-header"><span class="language">C#</span><button type="button" class="action is-relative" data-bi-name="copy" aria-label="Copy code">
+				<span class="icon">
+					<span class="docon docon-edit-copy" role="presentation"></span>
+				</span>
+				<span>Copy</span>
+				<div class="successful-copy-alert is-absolute has-right-zero has-top-zero has-left-zero has-bottom-zero is-flex has-flex-align-items-center has-flex-justify-content-center has-text-success-invert has-background-success is-transparent" aria-hidden="true">
+					<span class="icon is-size-4">
+						<span class="docon docon-check-mark" role="presentation"></span>
+					</span>
+				</div>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="using System;
+using System.Data.Objects;
+using NorthwindModel;
+
+class ObjectQuerySample
+{
+    public static void ExecuteQuery()
+    {
+        using (NorthwindEntities context = new NorthwindEntities())
+        {
+            ObjectQuery&lt;Categories&gt; categoryQuery = context.Categories;
+
+            foreach (Categories category in 
+                categoryQuery.Execute(MergeOption.AppendOnly))
+            {
+                Console.WriteLine(&quot;\t{0}\t{1}&quot;,
+                    category.CategoryID, category.CategoryName);
+            }
+        }
+    }
+}
+"><span><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Data.Objects;
+<span class="hljs-keyword">using</span> NorthwindModel;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title">ObjectQuerySample</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ExecuteQuery</span>(<span class="hljs-params"></span>)</span>
+    {
+        <span class="hljs-keyword">using</span> (NorthwindEntities context = <span class="hljs-keyword">new</span> NorthwindEntities())
+        {
+            ObjectQuery&lt;Categories&gt; categoryQuery = context.Categories;
+
+            <span class="hljs-keyword">foreach</span> (Categories category <span class="hljs-keyword">in</span> 
+                categoryQuery.Execute(MergeOption.AppendOnly))
+            {
+                Console.WriteLine(<span class="hljs-string">"\t{0}\t{1}"</span>,
+                    category.CategoryID, category.CategoryName);
+            }
+        }
+    }
+}
+</span></code></pre>
+<pre tabindex="0" class="has-inner-focus" hidden=""><code class="lang-vb" data-author-content="Option Explicit On
+Option Strict On
+
+Imports System.Data.Objects
+Imports NorthwindModel
+
+Class ObjectQuerySample
+    Public Shared Sub ExecuteQuery()
+        Using context As NorthwindEntities = New NorthwindEntities()
+            Dim categoryQuery As ObjectQuery(Of Categories) = context.Categories
+
+            For Each category As Categories In _
+                categoryQuery.Execute(MergeOption.AppendOnly)
+                Console.WriteLine(vbTab &amp; &quot;{0}&quot; &amp; vbTab &amp; &quot;{1}&quot;, _
+                    category.CategoryID, category.CategoryName)
+            Next
+        End Using
+    End Sub
+End Class
+">Option Explicit On
+Option Strict On
+
+Imports System.Data.Objects
+Imports NorthwindModel
+
+Class ObjectQuerySample
+    Public Shared Sub ExecuteQuery()
+        Using context As NorthwindEntities = New NorthwindEntities()
+            Dim categoryQuery As ObjectQuery(Of Categories) = context.Categories
+
+            For Each category As Categories In _
+                categoryQuery.Execute(MergeOption.AppendOnly)
+                Console.WriteLine(vbTab &amp; "{0}" &amp; vbTab &amp; "{1}", _
+                    category.CategoryID, category.CategoryName)
+            Next
+        End Using
+    End Sub
+End Class
+</code></pre>
+<h3 id="entityclient">EntityClient<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#entityclient" aria-labelledby="entityclient"></a></h3>
+<p>The code in this example uses an <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.entityclient.entitycommand" data-linktype="absolute-path">EntityCommand</a> to execute an Entity SQL query. This query returns a list of records that represent instances of the Categories entity type. An <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.entityclient.entitydatareader" data-linktype="absolute-path">EntityDataReader</a> is used to access data records in the result set. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework" data-linktype="relative-path">EntityClient Provider for the Entity Framework</a>.</p>
+<div class="codeHeader" id="code-try-6" data-bi-name="code-header"><span class="language">C#</span><button type="button" class="action is-relative" data-bi-name="copy" aria-label="Copy code">
+				<span class="icon">
+					<span class="docon docon-edit-copy" role="presentation"></span>
+				</span>
+				<span>Copy</span>
+				<div class="successful-copy-alert is-absolute has-right-zero has-top-zero has-left-zero has-bottom-zero is-flex has-flex-align-items-center has-flex-justify-content-center has-text-success-invert has-background-success is-transparent" aria-hidden="true">
+					<span class="icon is-size-4">
+						<span class="docon docon-check-mark" role="presentation"></span>
+					</span>
+				</div>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="using System;
+using System.Data;
+using System.Data.Common;
+using System.Data.EntityClient;
+using NorthwindModel;
+
+class EntityClientSample
+{
+    public static void ExecuteQuery()
+    {
+        string queryString =
+            @&quot;SELECT c.CategoryID, c.CategoryName 
+                FROM NorthwindEntities.Categories AS c&quot;;
+
+        using (EntityConnection conn =
+            new EntityConnection(&quot;name=NorthwindEntities&quot;))
+        {
+            try
+            {
+                conn.Open();
+                using (EntityCommand query = new EntityCommand(queryString, conn))
+                {
+                    using (DbDataReader rdr = 
+                        query.ExecuteReader(CommandBehavior.SequentialAccess))
+                    {
+                        while (rdr.Read())
+                        {
+                            Console.WriteLine(&quot;\t{0}\t{1}&quot;, rdr[0], rdr[1]);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+}
+"><span><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Data;
+<span class="hljs-keyword">using</span> System.Data.Common;
+<span class="hljs-keyword">using</span> System.Data.EntityClient;
+<span class="hljs-keyword">using</span> NorthwindModel;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title">EntityClientSample</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ExecuteQuery</span>(<span class="hljs-params"></span>)</span>
+    {
+        <span class="hljs-keyword">string</span> queryString =
+            <span class="hljs-string">@"SELECT c.CategoryID, c.CategoryName 
+                FROM NorthwindEntities.Categories AS c"</span>;
+
+        <span class="hljs-keyword">using</span> (EntityConnection conn =
+            <span class="hljs-keyword">new</span> EntityConnection(<span class="hljs-string">"name=NorthwindEntities"</span>))
+        {
+            <span class="hljs-keyword">try</span>
+            {
+                conn.Open();
+                <span class="hljs-keyword">using</span> (EntityCommand query = <span class="hljs-keyword">new</span> EntityCommand(queryString, conn))
+                {
+                    <span class="hljs-keyword">using</span> (DbDataReader rdr = 
+                        query.ExecuteReader(CommandBehavior.SequentialAccess))
+                    {
+                        <span class="hljs-keyword">while</span> (rdr.Read())
+                        {
+                            Console.WriteLine(<span class="hljs-string">"\t{0}\t{1}"</span>, rdr[<span class="hljs-number">0</span>], rdr[<span class="hljs-number">1</span>]);
+                        }
+                    }
+                }
+            }
+            <span class="hljs-keyword">catch</span> (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+}
+</span></code></pre>
+<pre tabindex="0" class="has-inner-focus" hidden=""><code class="lang-vb" data-author-content="Option Explicit On
+Option Strict On
+
+Imports System.Data
+Imports System.Data.Common
+Imports System.Data.EntityClient
+Imports NorthwindModel
+
+Class EntityClientSample
+    Public Shared Sub ExecuteQuery()
+        Dim queryString As String = _
+            &quot;SELECT c.CategoryID, c.CategoryName &quot; &amp; _
+                &quot;FROM NorthwindEntities.Categories AS c&quot;
+
+        Using conn As EntityConnection = _
+            New EntityConnection(&quot;name=NorthwindEntities&quot;)
+
+            Try
+                conn.Open()
+                Using query As EntityCommand = _
+                New EntityCommand(queryString, conn)
+                    Using rdr As DbDataReader = _
+                        query.ExecuteReader(CommandBehavior.SequentialAccess)
+                        While rdr.Read()
+                            Console.WriteLine(vbTab &amp; &quot;{0}&quot; &amp; vbTab &amp; &quot;{1}&quot;, _
+                                              rdr(0), rdr(1))
+                        End While
+                    End Using
+                End Using
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+        End Using 
+    End Sub
+End Class
+">Option Explicit On
+Option Strict On
+
+Imports System.Data
+Imports System.Data.Common
+Imports System.Data.EntityClient
+Imports NorthwindModel
+
+Class EntityClientSample
+    Public Shared Sub ExecuteQuery()
+        Dim queryString As String = _
+            "SELECT c.CategoryID, c.CategoryName " &amp; _
+                "FROM NorthwindEntities.Categories AS c"
+
+        Using conn As EntityConnection = _
+            New EntityConnection("name=NorthwindEntities")
+
+            Try
+                conn.Open()
+                Using query As EntityCommand = _
+                New EntityCommand(queryString, conn)
+                    Using rdr As DbDataReader = _
+                        query.ExecuteReader(CommandBehavior.SequentialAccess)
+                        While rdr.Read()
+                            Console.WriteLine(vbTab &amp; "{0}" &amp; vbTab &amp; "{1}", _
+                                              rdr(0), rdr(1))
+                        End While
+                    End Using
+                End Using
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+        End Using 
+    End Sub
+End Class
+</code></pre>
+<h2 id="linq-to-sql">LINQ to SQL<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#linq-to-sql" aria-labelledby="linq-to-sql"></a></h2>
+<p>The code in this example uses a LINQ query to return data as Categories objects, which are projected as an anonymous type that contains only the CategoryID and CategoryName properties. This example is based on the Northwind data context. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/getting-started" data-linktype="relative-path">Getting Started</a>.</p>
+<div class="codeHeader" id="code-try-7" data-bi-name="code-header"><span class="language">C#</span><button type="button" class="action is-relative" data-bi-name="copy" aria-label="Copy code">
+				<span class="icon">
+					<span class="docon docon-edit-copy" role="presentation"></span>
+				</span>
+				<span>Copy</span>
+				<div class="successful-copy-alert is-absolute has-right-zero has-top-zero has-left-zero has-bottom-zero is-flex has-flex-align-items-center has-flex-justify-content-center has-text-success-invert has-background-success is-transparent" aria-hidden="true">
+					<span class="icon is-size-4">
+						<span class="docon docon-check-mark" role="presentation"></span>
+					</span>
+				</div>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Northwind;
+
+    class LinqSqlSample
+    {
+        public static void ExecuteQuery()
+        {
+            using (NorthwindDataContext db = new NorthwindDataContext())
+            {
+                try
+                {
+                    var query = from category in db.Categories
+                                select new
+                                {
+                                    categoryID = category.CategoryID,
+                                    categoryName = category.CategoryName
+                                };
+
+                    foreach (var categoryInfo in query)
+                    {
+                        Console.WriteLine(&quot;vbTab {0} vbTab {1}&quot;,
+                            categoryInfo.categoryID, categoryInfo.categoryName);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+    }
+"><span><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Collections.Generic;
+<span class="hljs-keyword">using</span> System.Linq;
+<span class="hljs-keyword">using</span> System.Text;
+<span class="hljs-keyword">using</span> Northwind;
+
+    <span class="hljs-keyword">class</span> <span class="hljs-title">LinqSqlSample</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ExecuteQuery</span>(<span class="hljs-params"></span>)</span>
+        {
+            <span class="hljs-keyword">using</span> (NorthwindDataContext db = <span class="hljs-keyword">new</span> NorthwindDataContext())
+            {
+                <span class="hljs-keyword">try</span>
+                {
+                    <span class="hljs-keyword">var</span> query = <span class="hljs-keyword">from</span> category <span class="hljs-keyword">in</span> db.Categories
+                                <span class="hljs-keyword">select</span> <span class="hljs-keyword">new</span>
+                                {
+                                    categoryID = category.CategoryID,
+                                    categoryName = category.CategoryName
+                                };
+
+                    <span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">var</span> categoryInfo <span class="hljs-keyword">in</span> query)
+                    {
+                        Console.WriteLine(<span class="hljs-string">"vbTab {0} vbTab {1}"</span>,
+                            categoryInfo.categoryID, categoryInfo.categoryName);
+                    }
+                }
+                <span class="hljs-keyword">catch</span> (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+    }
+</span></code></pre>
+<pre tabindex="0" class="has-inner-focus" hidden=""><code class="lang-vb" data-author-content="Option Explicit On
+Option Strict On
+
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Text
+Imports Northwind
+
+Class LinqSqlSample
+    Public Shared Sub ExecuteQuery()
+        Using db As NorthwindDataContext = New NorthwindDataContext()
+            Try
+                Dim query = From category In db.Categories _
+                                Select New With _
+                                { _
+                                    .categoryID = category.CategoryID, _
+                                    .categoryName = category.CategoryName _
+                                }
+
+                For Each categoryInfo In query
+                    Console.WriteLine(vbTab &amp; &quot;{0}&quot; &amp; vbTab &amp; &quot;{1}&quot;, _
+                            categoryInfo.categoryID, categoryInfo.categoryName)
+                Next
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+            End Using 
+    End Sub
+End Class
+">Option Explicit On
+Option Strict On
+
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Text
+Imports Northwind
+
+Class LinqSqlSample
+    Public Shared Sub ExecuteQuery()
+        Using db As NorthwindDataContext = New NorthwindDataContext()
+            Try
+                Dim query = From category In db.Categories _
+                                Select New With _
+                                { _
+                                    .categoryID = category.CategoryID, _
+                                    .categoryName = category.CategoryName _
+                                }
+
+                For Each categoryInfo In query
+                    Console.WriteLine(vbTab &amp; "{0}" &amp; vbTab &amp; "{1}", _
+                            categoryInfo.categoryID, categoryInfo.categoryName)
+                Next
+            Catch ex As Exception
+                Console.WriteLine(ex.Message)
+            End Try
+            End Using 
+    End Sub
+End Class
+</code></pre>
+<h2 id="see-also">See also<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#see-also" aria-labelledby="see-also"></a></h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview" data-linktype="relative-path">ADO.NET Overview</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/retrieving-and-modifying-data" data-linktype="relative-path">Retrieving and Modifying Data in ADO.NET</a></li>
+<li><a href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/h0y4a0f6(v=vs.120)" data-linktype="external">Creating Data Applications</a></li>
+<li><a href="https://docs.microsoft.com/previous-versions/bb738455(v=vs.90)" data-linktype="external">Querying an Entity Data Model (Entity Framework Tasks)</a></li>
+<li><a href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738512(v=vs.100)" data-linktype="external">How to: Execute a Query that Returns Anonymous Type Objects</a></li>
+</ul>
+
+						<!-- </content> -->
+
+						</main>
+
+						<!-- recommended content page section -->
+
+							<nav data-bi-name="recommendation-bottom" hidden="" id="recommended-content-center" class="is-hidden-desktop" aria-labelledby="recommended-content-center-title">
+								<h3 id="recommended-content-center-title" class="is-size-2 has-margin-top-large has-margin-bottom-small">Recommended Content</h3>
+							</nav>
+
+						<!-- end recommended content page section -->
+
+						<!-- rating mobile section -->
+								<div class="is-hidden-desktop has-border-top has-margin-top-large has-padding-top-small">
+									
+<div data-bi-name="rating" class="feedback-verbatim has-border-bottom has-padding-bottom-small has-margin-bottom-small">
+	<div class="binary-rating">
+		<div class="binary-rating-buttons">
+			<h3 class="has-text-weight-semibold has-margin-top-none has-margin-bottom-small">Is this page helpful?</h3>
+			<div>
+				<button class="thumb-rating like has-inner-focus has-padding-left-extra-small has-padding-right-extra-small" title="Yes" data-bi-name="rating-yes" data-bi-sat="1">
+					<span class="icon docon docon-like" aria-hidden="true"></span><span>Yes</span>
+				</button>
+				<button class="thumb-rating dislike has-inner-focus has-padding-none has-padding-right-extra-small" title="No" data-bi-name="rating-no" data-bi-sat="0" aria-expanded="false" aria-haspopup="true" aria-controls="rating-feedback">
+					<span class="icon docon docon-dislike" aria-hidden="true"></span><span>No</span>
+				</button>
+			</div>
+		</div>
+		<form class="feedback-verbatim-form is-hidden">
+			<div class="verbatim-textarea box is-relative has-box-shadow-none has-border has-margin-top-small has-padding-extra-small is-size-8">
+				<label for="rating-textarea-mobile" class="visually-hidden">Any additional feedback?</label>
+				<textarea id="rating-textarea-mobile" rows="4" maxlength="999" placeholder="Any additional feedback?" required="" class="textarea has-border-none has-box-shadow-none has-inner-focus"></textarea>
+			</div>
+			<div class="buttons is-right has-margin-top-medium has-margin-right-extra-small">
+				<button class="skip-rating button is-text is-link is-small" type="button">Skip</button>
+				<button disabled="" class="submit-rating button is-primary is-small" type="submit" data-bi-name="rating-verbatim">Submit</button>
+			</div>
+		</form>
+	</div>
+	<div class="thankyou-rating is-hidden">
+		<p>Thank you.</p>
+	</div>
+</div>								</div>
+						<!-- end rating mobile section -->
+
+						<!-- feedback section -->
+
+
+
+
+						<!-- end feedback section -->
+
+						<!-- feedback report section -->
+						<!-- end feedback report section -->
+
+						<div class="footerContainer is-visible-interactive has-default-focus ">
+<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+
+    <a data-mscc-ic="false" class="locale-selector-link" href="https://docs.microsoft.com/en-us/locale?target=https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples" data-bi-name="select-locale"><span class="icon docon docon-world is-size-4 has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text has-inner-focus">English (United States)</span></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blog</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Site Feedback</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+    </ul>
+</footer>
+						</div>
+					</div>
+
+					<div class="is-size-7 right-container column is-one-quarter is-one-fifth-desktop is-hidden-mobile is-hidden-tablet-only" data-bi-name="pageactions" role="complementary" aria-label="Page Actions">
+						<div id="affixed-right-container" class="doc-outline is-fixed is-vertically-scrollable" style="width: 129.438px; top: 24px; bottom: 24px;">
+								
+<div data-bi-name="rating" class="feedback-verbatim has-border-bottom has-padding-bottom-small has-margin-bottom-small">
+	<div class="binary-rating">
+		<div class="binary-rating-buttons">
+			<h3 class="has-text-weight-semibold has-margin-top-none has-margin-bottom-small">Is this page helpful?</h3>
+			<div>
+				<button class="thumb-rating like has-inner-focus has-padding-left-extra-small has-padding-right-extra-small" title="Yes" data-bi-name="rating-yes" data-bi-sat="1">
+					<span class="icon docon docon-like" aria-hidden="true"></span><span>Yes</span>
+				</button>
+				<button class="thumb-rating dislike has-inner-focus has-padding-none has-padding-right-extra-small" title="No" data-bi-name="rating-no" data-bi-sat="0" aria-expanded="false" aria-haspopup="true" aria-controls="rating-feedback">
+					<span class="icon docon docon-dislike" aria-hidden="true"></span><span>No</span>
+				</button>
+			</div>
+		</div>
+		<form class="feedback-verbatim-form is-hidden">
+			<div class="verbatim-textarea box is-relative has-box-shadow-none has-border has-margin-top-small has-padding-extra-small is-size-8">
+				<label for="rating-textarea-desktop" class="visually-hidden">Any additional feedback?</label>
+				<textarea id="rating-textarea-desktop" rows="4" maxlength="999" placeholder="Any additional feedback?" required="" class="textarea has-border-none has-box-shadow-none has-inner-focus"></textarea>
+			</div>
+			<div class="buttons is-right has-margin-top-medium has-margin-right-extra-small">
+				<button class="skip-rating button is-text is-link is-small" type="button">Skip</button>
+				<button disabled="" class="submit-rating button is-primary is-small" type="submit" data-bi-name="rating-verbatim">Submit</button>
+			</div>
+		</form>
+	</div>
+	<div class="thankyou-rating is-hidden">
+		<p>Thank you.</p>
+	</div>
+</div>								<nav data-bi-name="recommendation-sidebar" hidden="" id="recommended-content-nav" role="navigation" aria-labelledby="recommended-content-nav-title">
+									<h3 id="recommended-content-nav-title">Recommended Content</h3>
+								</nav>
+							<nav id="side-doc-outline" data-bi-name="intopic toc" role="navigation" aria-label="Article Outline">
+								<h3>In this article</h3>
+							<ol><li class="selected"><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#adonet-data-provider-examples">ADO.NET data provider examples</a></li><li><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#entity-framework-examples">Entity Framework examples</a></li><li><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#linq-to-sql">LINQ to SQL</a></li><li><a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples#see-also">See also</a></li></ol></nav>
+						</div>
+					</div>
+
+					<!--end of div.columns -->
+				</div>
+
+			<!--end of .primary-holder -->
+			</section>
+
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+		</div>
+
+		<!--end of .mainContainer -->
+	</div>
+
+	<div id="openFeedbackContainer" class="openfeedback-container"></div>
+
+	<div class="footerContainer has-default-focus is-hidden-interactive ">
+<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+
+    <a data-mscc-ic="false" class="locale-selector-link" href="https://docs.microsoft.com/en-us/locale?target=https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples" data-bi-name="select-locale"><span class="icon docon docon-world is-size-4 has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text">English (United States)</span></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blog</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Site Feedback</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+    </ul>
+</footer>
+	</div>
+
+		<script type="text/x-mathjax-config;executed=true">
+			MathJax.Hub.Config({
+				showMathMenu: false,
+				showMathMenuMSIE: false,
+				tex2jax: {
+					inlineMath: [['$','$'], ['\\(','\\)']],
+					processEscapes: true
+				}
+			});
+		</script>
+		<script src="./ADO.NET code examples _ Microsoft Docs_files/MathJax.js.download" integrity="sha384-RLsAi7wiVvnmHrRjlVvUjU45C0bfsIBg6Gsxue6azjJi+lA5q5uK+XbGzO3yn5g1" crossorigin="anonymous"></script>
+	<div id="action-panel" role="region" aria-label="Action Panel" class="action-panel has-default-focus" tabindex="-1"></div>
+
+
+</body></html>
